@@ -1,9 +1,8 @@
-<a href="https://youtu.be/ww4z2m3uORU"><img src="https://img.shields.io/badge/Tutorial-Video-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://youtu.be/ww4z2m3uORU" /><br>
 
 [![SWUbanner](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://vshymanskyy.github.io/StandWithUkraine)
 
-<a href="https://youtu.be/ww4z2m3uORU"><img src="https://img.shields.io/badge/Tutorial-Video-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://youtu.be/ww4z2m3uORU" /><br>
-# ZIM BOT INC
+
+# ZIM BOT V4
  WhatsApp with so Many features using multi device  [BAILEYS](https://github.com/adiwajshing/baileys)
  
  ## ```Donate Me```
@@ -23,7 +22,7 @@
 
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/zim-bot/zimbot-v3)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/zim-bot/zimbot-v4)
 
 ## BUILD PACKS
 
@@ -31,7 +30,6 @@
 https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
 https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 
-https://github.com/DuckyTeam/heroku-buildpack-imagemagick
 ```
 [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@ReinhardTuna/Zimbot-v3-QR?v=1)
 <img src="https://fontmeme.com/permalink/220116/0c42dc0b64931810388ba399da55e927.png" alt="backwoods-logo-font" border="0"></a>  
@@ -51,9 +49,9 @@ apt install git
 
 apt update && apt upgrade
 
-git clone https://github.com/zim-bot/zimbot-v3
+git clone https://github.com/zim-bot/zimbot-v4
  
-cd zimbot-v3
+cd zimbot-v4
 
 npm install
 
