@@ -1,6 +1,10 @@
 
 
 # ZIM BOT V4
+
+## ``` This Script is for Everyone Don't sell it at high price ```
+
+</hr> Are you Experiencing an error don't hesitate to ask me [DRIPS](https://was.me/)
  WhatsApp with so Many features using multi device  [BAILEYS](https://github.com/adiwajshing/baileys)
  
  ## ```Donate Me```
