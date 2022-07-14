@@ -6959,7 +6959,9 @@ requestt(hahahe, function (error, response, body) {
 });
 break
 case 'tes': case 'test': case 'alive': case 'bot': case 'robot': case 'zimbot': case 'drips':{
-  ram9000 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
+ram9000 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
+timestampe = speed();
+latensie = speed() - timestampe
   anu = `
 *ᴜᴘᴛɪᴍᴇ :* ${runtime(process.uptime())}
 
