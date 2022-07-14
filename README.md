@@ -4,7 +4,7 @@
 
 ## ``` This Script is for Everyone Don't sell it at high price ```
 
-## Are you Experiencing an error don't hesitate to ask me [DRIPS](https://was.me/+447441437150)
+## Are you Experiencing an error don't hesitate to ask me [DRIPS](https://wa.me/+447441437150)
  WhatsApp with so Many features using multi device  [BAILEYS](https://github.com/adiwajshing/baileys)
  
  ## ```Donate Me```
