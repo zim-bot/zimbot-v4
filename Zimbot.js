@@ -301,9 +301,9 @@ if (!('templateLocation' in setting)) setting.templateLocation = false
 if (!('templateGif' in setting)) setting.templateGif = false
 if (!('templateMsg' in setting)) setting.templateMsg = false
 if (!('templateList' in setting)) setting.templateList = false
-if (!('templateDoc' in setting)) setting.templateDoc = false
+if (!('templateDoc' in setting)) setting.templateDoc = true
 if (!('chatbot' in setting)) setting.chatbot = false
-if (!('templateZimbot' in setting)) setting.templateZimbot = true
+if (!('templateZimbot' in setting)) setting.templateZimbot = false
 if (!('grouponly' in setting)) setting.grouponly = false
 if (!('autoblock' in setting)) setting.autoblock = false
     } else global.db.settings[botNumber] = {
@@ -314,8 +314,8 @@ templateLocation: false,
 templateGif: false,
 templateMsg: false,
 templateList: false,
-templateDoc: false,
-templateZimbot: true,
+templateDoc: true,
+templateZimbot: false,
 chatbot: false,
 grouponly: false,
 autoblock: false,
