@@ -129,7 +129,6 @@ const isAdmins = m.isGroup ? groupAdmins.includes(m.sender) : false
 const isAntinsfw = m.isGroup ?  dripsno.includes(m.chat) : false
 const isPremium = isCreator || global.premium.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) || false
 const antiToxic = m.isGroup ? dripsanti.includes(from) : false
-const isChatbot = m.sender ? chatbot.includes() : true
 const zimbotincv3 = body.slice(0).trim().split(/ +/).shift().toLowerCase()
 //-----END HERE------\\
 
