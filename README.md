@@ -4,7 +4,7 @@
 
 ## ``` This Script is for Everyone Don't sell it at high price ```
 
-</hr> Are you Experiencing an error don't hesitate to ask me [DRIPS](https://was.me/)
+## Are you Experiencing an error don't hesitate to ask me [DRIPS](https://was.me/+447441437150)
  WhatsApp with so Many features using multi device  [BAILEYS](https://github.com/adiwajshing/baileys)
  
  ## ```Donate Me```
@@ -61,7 +61,7 @@ npm update
  
 rm -r session.json
 
-npm start
+node --expose-gc index.js
 
 echo scan the qr code and enjoy bot
 
