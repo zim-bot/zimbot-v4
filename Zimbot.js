@@ -7043,8 +7043,8 @@ reply(`*Successfully reported to the owner\n\nPlease make sure the bug is valid,
 break 
 case 'listmenu':             
   let sections = []   
-  let listmenu = [`allmenu`,`animemenu`,`groupmenu`,`toolmenu`,`downloadmenu`,`searchmenu`,`photofiltermenu`,`textpromenu`,`photooxymenu`,`ownermenu`,`ephotomenu`,`convertmenu`,`databasemenu`,`donasi`]
-  let listmenuu = [`ALL MENU`,`ANIME MENU`,`GROUP MENU`,`TOOL MENU`,`DOWNLOAD MENU`,`SEARCH MENU`,`PHOTOFILTER MENU`,`TEXTPRO MENU`,`PHOTOOXY MENU`,`OWNER MENU`,`EPHOTO MENU`,`CONVERT MENU`,`DATABASE MENU`,`DONATE`]
+  let listmenu = [`allmenu`,`animemenu`,`groupmenu`,`toolmenu`,`downloadmenu`,`searchmenu`,`photofiltermenu`,`textpromenu`,`photooxymenu`,`ownermenu`,`ephotomenu`,`convertmenu`,`databasemenu`,`rpgmenu`,`donasi`]
+  let listmenuu = [`ALL MENU`,`ANIME MENU`,`GROUP MENU`,`TOOL MENU`,`DOWNLOAD MENU`,`SEARCH MENU`,`PHOTOFILTER MENU`,`TEXTPRO MENU`,`PHOTOOXY MENU`,`OWNER MENU`,`EPHOTO MENU`,`CONVERT MENU`,`DATABASE MENU`,`RPG MENU`,`DONATE`]
   
   let nombor = 1
   let startnum = 0
@@ -7716,6 +7716,33 @@ anu = `
 ┊🪨underwaterocean -text-
 └───〔 *_ᴢɪᴍ ʙᴏᴛ ɪɴᴄ_* 〕
 
+
+┌───〔 *_◉ᴍᴇɴᴜ ʀᴘɢ◉_* 〕
+┊🪨joinrpg
+┊🪨quest 
+┊🪨mining
+┊🪨mancing
+┊🪨luckyday
+┊🪨luckytime
+┊🪨adventure
+┊🪨inventori
+└───────────●
+
+┌───〔 *_◉Fᴀʀᴍ ʀᴘɢ◉_* 〕
+┊🪨killslime
+┊🪨killgoblin
+┊🪨killdevil
+┊🪨killbehemoth
+┊🪨killdemon
+┊🪨killdemonking 
+└───────────●
+
+┌───〔 *_◉Tʀᴀᴅᴇ ʀᴘɢ◉_* 〕
+┊🪨sellikan
+┊🪨sellbesi
+┊🪨sellemas
+┊🪨selldiamond
+└───────────●
 %readmore` 
     let btn = [{
         urlButton: {
