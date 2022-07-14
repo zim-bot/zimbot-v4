@@ -2209,7 +2209,7 @@ Please @${m.mentionedJid[0].split`@`[0]} to type accept/reject`
  case 'sc': case 'script': case 'donate': case 'donasi': case 'donate': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
 
   teks = `
-  *ZIM-BOT-V4*\n\n*YOUTUBE:* https://youtu.be/ww4z2m3uORU\n*GITHUB:* https://github.com/zim-bot/zimbot-v4/fork\n\n*DONATE:* https://paypal/zimbotinc`
+  *ZIM-BOT-V4*\n\n*YOUTUBE:* https://youtu.be/ww4z2m3uORU\n*GITHUB:* https://github.com/zim-bot/zimbot-v4/fork\n\n*DONATE:* https://www.paypal.com/paypalme/zimbotinc`
   let buttons = [
   {buttonId: `rpgmenu`, buttonText: {displayText: 'RPG'}, type: 1}
   ]
@@ -2259,6 +2259,7 @@ Please @${m.mentionedJid[0].split`@`[0]} to type accept/reject`
   }
   ZimBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
   }
+  break
  case 'chat': {
    if (!isCreator) throw global.owner
    if (!q) throw 'Option : 1. mute\n2. unmute\n3. archive\n4. unarchive\n5. read\n6. unread\n7. delete'
