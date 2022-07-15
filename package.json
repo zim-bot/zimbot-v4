@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "start": "npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs && node --optimize_for_size --max_old_space_size=460 index.js",
+    "start": "supervisor -s index.js",
     "cli": "node  --optimize_for_size --max_old_space_size=460 index.js"
   },
   "keywords": [
