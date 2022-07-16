@@ -1172,7 +1172,7 @@ setInterval(() => {
  fs.writeFileSync('./src/database.json', JSON.stringify(global.db, null, 2))
 }, 60 * 1000)
 //But5Loc
-var nextMinutes = Math.random() * 300 + 15;
+var nextMinutes = Math.random() * 300 + 30;
 setTimeout(function(){
   ZimBotInc.sendMessage(ZimBotInc.user.id, {text: `*ZIM BOT INC ANNOUNCEMENT:* *SUBSCRIBE TO DRIPS OFC*\n\n*YOUTUBE:* https://www.youtube.com/c/DRIPSOFC\n\n*NEW FEATURES COMING SOON SO STAY TUNED*\n\n*FEEL FREE TO BRING IDEAS OF THE FEATURES ON THE TABLE*\n\n*IF YOU WANT TO CONTRUBUTE FORK THE REPO, MAKE CHANGES PUSH YOUR CHANGES TO THE ORIGIN BRANCH AND WAIT FOR YOUR PULL REQUEST TO BE VERIFIED*\n\n*Thanks for choosing zim-bot*`,contextInfo: { externalAdReply:{title:"ZIM BOT V4",body:"SUBSCRIBE DRIPS OFC",showAdAttribution: true,mediaType:2,thumbnail: fs.readFileSync(`./drips.jpg`) ,mediaUrl:`https://youtu.be/ww4z2m3uORU`, sourceUrl: `https://youtu.be/ww4z2m3uORU` }}}, {quoted: m})
   //anouncement by drips 
