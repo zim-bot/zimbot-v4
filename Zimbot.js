@@ -1150,11 +1150,14 @@ ZimBotInc.sendMessage(m.chat, {text:`*▊▊▊ ANTILINK ▊▊▊*\n\n@${kice.s
 }
 }
 if (db.settings[botNumber].grouponly) {
-if (m.chat.endsWith('@s.whatsapp.net')) {
-reply(mess.grouponly)
-ZimBotInc.updateBlockStatus(m.sender,'block')
-}
-}
+  if (!m.isGroup) {
+    let a = 'a'
+    if (!isCreator) throw `*ɪɴʙᴏx ʙʟᴏᴄᴋ ᴀᴄᴛɪᴠᴀᴛᴇ ʙʏ ᴏᴡɴᴇʀ*`
+    if (budy === a) 
+    throw  '*inbox not allowed*'
+   
+    }
+  }
 var Apik = ''
 var socket = fetchJson('wss://wss.allsportsapi.com/live_events?widgetKey='+ 'db7fca1f4dfd0fa8b50c30c3b4569a61e0c5c93a79c18864bf9c9b6ab635c427' +'&timezone=+02:00');
 socket.onmessage = function(e) {
@@ -2824,7 +2827,8 @@ reply(`*It was nice to chat with you goodbye _chatbot off_*`)
   } 
 break 
 case 'welcome': {
-  if (!isAdmins)  reply(mess.admin)
+  if (!m.isGroup) throw mess.group
+  if (!isAdmins)  throw mess.admin
   if (args[0] === "on") {
   if (db.chats[m.chat].isWelcome) return reply(`*Welcome already on okay*`)
   db.chats[m.chat].isWelcome = true
