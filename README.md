@@ -1,6 +1,10 @@
 
 
 # ZIM BOT V4
+
+## ``` This Script is for Everyone Don't sell it at high price ```
+
+## Are you Experiencing an error don't hesitate to ask me [DRIPS](https://wa.me/+447441437150)
  WhatsApp with so Many features using multi device  [BAILEYS](https://github.com/adiwajshing/baileys)
  
  ## ```Donate Me```
@@ -51,13 +55,10 @@ git clone https://github.com/zim-bot/zimbot-v4
  
 cd zimbot-v4
 
-npm install
-
-npm update
  
 rm -r session.json
 
-npm start
+node --expose-gc index.js
 
 echo scan the qr code and enjoy bot
 
