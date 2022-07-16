@@ -1152,7 +1152,7 @@ ZimBotInc.sendMessage(m.chat, {text:`*▊▊▊ ANTILINK ▊▊▊*\n\n@${kice.s
 if (db.settings[botNumber].grouponly) {
   if (!m.isGroup) {
     let a = 'a'
-    if (!isCreator) throw `*ɪɴʙᴏx ʙʟᴏᴄᴋ ᴀᴄᴛɪᴠᴀᴛᴇ ʙʏ ᴏᴡɴᴇʀ*`
+    if (!isCreator) throw `*INBOX NOT ALLOWED*`
     if (budy === a) 
     throw  '*inbox not allowed*'
    
