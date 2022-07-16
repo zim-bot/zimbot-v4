@@ -55,9 +55,6 @@ git clone https://github.com/zim-bot/zimbot-v4
  
 cd zimbot-v4
 
-npm install
-
-npm update
  
 rm -r session.json
 
