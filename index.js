@@ -160,8 +160,8 @@ body:"SUB DRIPS OFC",
 showAdAttribution: true,
 mediaType:2,
 thumbnail:wangu,
-mediaUrl:`https://youtu.be/ww4z2m3uORU`, 
-sourceUrl: `https://youtu.be/ww4z2m3uORU`,
+mediaUrl:`https://youtu.be/KNu-gr2h7bo`, 
+sourceUrl: `https://youtu.be/KNu-gr2h7bo`,
 }}
 }
 const driphunny = fs.readFileSync('./Zimbot/welcome.mp3')
@@ -193,8 +193,8 @@ body:"SUB DRIPS OFC",
 showAdAttribution: true,
 mediaType:2,
 thumbnail: mhatadzenyu,
-mediaUrl:`https://youtu.be/ww4z2m3uORU`, 
-sourceUrl: `https://youtu.be/ww4z2m3uORU`,
+mediaUrl:`https://youtu.be/KNu-gr2h7bo`, 
+sourceUrl: `https://youtu.be/KNu-gr2h7bo`,
 }}
 }
 const dripbabe = fs.readFileSync('./Zimbot/leave.mp3')
