@@ -3,9 +3,10 @@
 # ZIM BOT V4
 
 ## ``` This Script is for Everyone Don't sell it at high price ```
+## WATCH TUTORIAL NICELY DON'T SKIP [`YOUTUBE`](https://youtu.be/KNu-gr2h7bo)
 
-## Are you Experiencing an error don't hesitate to ask me [DRIPS](https://wa.me/+447441437150)
- WhatsApp with so Many features using multi device  [BAILEYS](https://github.com/adiwajshing/baileys)
+##  ``` Are you Experiencing an error don't hesitate to ask me ``` [`DRIPS`](https://wa.me/+447441437150)
+ WhatsApp with so Many features using multi device  [`BAILEYS`](https://github.com/adiwajshing/baileys)
  
  <a href="https://youtu.be/KNu-gr2h7bo"><img src="https://img.shields.io/badge/Tutorial-Video-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://youtu.be/ww4z2m3uORU" /><br>
  
