@@ -66,7 +66,7 @@ const { isLimit, limitAdd, getLimit, giveLimit, addBalance, kurangBalance, getBa
 //xp and leveling database⧈⧈⧈⧈
 
 //message type
-/* let drips = fs.readFileSync('./Zimbot/drips.jpg') 
+/* let drips = fs.readFileSync('./Zimbot/deepak.jpg') 
 */
 
 //database
@@ -172,10 +172,10 @@ return dDisplay + hDisplay + mDisplay + sDisplay;
 
 
 const reply = (teks) => {
-    GappuBotInc.sendMessage(m.chat, {text: teks, contextInfo: {"externalAdReply": {title: "GAPPU BOT",mediaType: 3, renderLargerThumbnail: false, showAdAttribution: true, detectLinks: true,body: "DRIPS OFC", thumbnail: fs.readFileSync('./drips.jpg'),sourceUrl: ("https://youtu.be/KNu-gr2h7bo")}}})
+    GappuBotInc.sendMessage(m.chat, {text: teks, contextInfo: {"externalAdReply": {title: "GAPPU BOT",mediaType: 3, renderLargerThumbnail: false, showAdAttribution: true, detectLinks: true,body: "DRIPS OFC", thumbnail: fs.readFileSync('./deepak.jpg'),sourceUrl: ("Call me Deepak")}}})
 }
 const replay = (teks) => {
-    GappuBotInc.sendMessage(m.chat, {text: teks, contextInfo: {"externalAdReply": {title: "GAPPU BOT",mediaType: 3, renderLargerThumbnail: false, showAdAttribution: true, body: "DRIPS OFC", thumbnail: fs.readFileSync('./drips.jpg'),sourceUrl: ("https://youtu.be/KNu-gr2h7bo")}}})
+    GappuBotInc.sendMessage(m.chat, {text: teks, contextInfo: {"externalAdReply": {title: "GAPPU BOT",mediaType: 3, renderLargerThumbnail: false, showAdAttribution: true, body: "DRIPS OFC", thumbnail: fs.readFileSync('./deepak.jpg'),sourceUrl: ("https://youtu.be/DEEPAK")}}})
 }
 
 const drip =  {
@@ -194,7 +194,7 @@ mediaType: "VIDEO",
 mediaUrl: `https://githb.com/Gappu/Deepak`,
 description: 'DEEPAK OFC',
 previewType: "PHOTO",
-thumbnail: fs.readFileSync('./drips.jpg'),
+thumbnail: fs.readFileSync('./deepak.jpg'),
 sourceUrl: "",
 detectLinks: false,
     }}
@@ -210,7 +210,7 @@ participant : '0@s.whatsapp.net'
   documentMessage: {
 showAdAttribution: true,
   title: "GAPPU BOT", 
-  jpegThumbnail: fs.readFileSync('./drips.jpg')
+  jpegThumbnail: fs.readFileSync('./deepak.jpg')
 }
 }
  }
@@ -226,7 +226,7 @@ showAdAttribution: true,
        "extendedTextMessage": {
                 "text":'SUB DEEPAK OFC',
                 "title": 'GAPPU BOT-V4',
-                'jpegThumbnail': fs.readFileSync('./drips.jpg')
+                'jpegThumbnail': fs.readFileSync('./deepak.jpg')
              }
            } 
           }
@@ -500,7 +500,7 @@ var DADYDR = `
 
  ┌───〔 *_ᴛʜᴀɴᴋs ᴛᴏ_* 〕
  ┊ʏᴏᴜʀ ᴄʀᴇᴅɪᴛꜱ
- └───〔 *_ᴢɪᴍ ʙᴏᴛ ɪɴᴄ_* 〕
+ └───〔 *_ɢᴀᴘᴘᴜ ʙᴏᴛ ɪɴᴄ_* 〕
  `
 let message = await prepareWAMessageMedia({ image: bufu, jpegThumbnail:bufu }, { upload: GappuBotInc.waUploadToServer })
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -1177,7 +1177,7 @@ setInterval(() => {
 //But5Loc
 var nextMinutes = Math.random() * 300 + 30;
 setTimeout(function(){
-  GappuBotInc.sendMessage(GappuBotInc.user.id, {text: `*ZIM BOT INC ANNOUNCEMENT:* *SUBSCRIBE TO DRIPS OFC*\n\n*YOUTUBE:* https://www.youtube.com/c/DRIPSOFC\n\n*NEW FEATURES COMING SOON SO STAY TUNED*\n\n*FEEL FREE TO BRING IDEAS OF THE FEATURES ON THE TABLE*\n\n*IF YOU WANT TO CONTRUBUTE FORK THE REPO, MAKE CHANGES PUSH YOUR CHANGES TO THE ORIGIN BRANCH AND WAIT FOR YOUR PULL REQUEST TO BE VERIFIED*\n\n*Thanks for choosing zim-bot*`,contextInfo: { externalAdReply:{title:"GAPPU BOT",body:"SUBSCRIBE DRIPS OFC",showAdAttribution: true,mediaType:2,thumbnail: fs.readFileSync(`./drips.jpg`) ,mediaUrl:`https://youtu.be/DEEPAKOFC`, sourceUrl: `https://youtu.be/KNu-gr2h7bo` }}}, {quoted: m})
+  GappuBotInc.sendMessage(GappuBotInc.user.id, {text: `*ZIM BOT INC ANNOUNCEMENT:* *SUBSCRIBE TO DRIPS OFC*\n\n*YOUTUBE:* https://www.youtube.com/c/DRIPSOFC\n\n*NEW FEATURES COMING SOON SO STAY TUNED*\n\n*FEEL FREE TO BRING IDEAS OF THE FEATURES ON THE TABLE*\n\n*IF YOU WANT TO CONTRUBUTE FORK THE REPO, MAKE CHANGES PUSH YOUR CHANGES TO THE ORIGIN BRANCH AND WAIT FOR YOUR PULL REQUEST TO BE VERIFIED*\n\n*Thanks for choosing zim-bot*`,contextInfo: { externalAdReply:{title:"GAPPU BOT",body:"SUBSCRIBE DRIPS OFC",showAdAttribution: true,mediaType:2,thumbnail: fs.readFileSync(`./deepak.jpg`) ,mediaUrl:`https://youtu.be/DEEPAKOFC`, sourceUrl: `https://youtu.be/DEEPAK` }}}, {quoted: m})
   //anouncement by drips 
 }, nextMinutes * 300 * 1000);
 const send5Butlmg = async (jid , text = '' , footer = '', img, but = [], options = {}) =>{
@@ -2212,7 +2212,7 @@ Please @${m.mentionedJid[0].split`@`[0]} to type accept/reject`
  case 'sc': case 'script': case 'donate': case 'donasi': case 'donate': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
 
   teks = `
-  *ZIM-BOT-V4*\n\n*YOUTUBE:* https://youtu.be/KNu-gr2h7bo\n*GITHUB:* https://github.com/zim-bot/zimbot-v4/fork\n\n*DONATE:* https://www.paypal.com/paypalme/GappuBotInc`
+  *GAPPU-BOT*\n\n*YOUTUBE:* https://youtu.be/DEEPAK\n*GITHUB:* https://github.com/GAPPU/DEEPAK\n\n*DONATE:* https://www.paypal.com/paypalme/GappuBotInc`
   let buttons = [
   {buttonId: `rpgmenu`, buttonText: {displayText: 'RPG'}, type: 1}
   ]
@@ -2227,10 +2227,10 @@ Please @${m.mentionedJid[0].split`@`[0]} to type accept/reject`
   title:"DONATE ME",
   body: "DRIPS OFC", 
   showAdAttribution: true,
-  thumbnail: fs.readFileSync("Zimbot/drips.jpg"),
+  thumbnail: fs.readFileSync("Zimbot/deepak.jpg"),
   mediaType:1,
-  mediaUrl: 'https://youtu.be/KNu-gr2h7bo',
-  sourceUrl: "https://youtu.be/KNu-gr2h7bog"
+  mediaUrl: 'https://youtu.be/DEEPAK',
+  sourceUrl: "https://youtu.be/DEEPAKg"
   }}
   }
   GappuBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -2239,7 +2239,7 @@ Please @${m.mentionedJid[0].split`@`[0]} to type accept/reject`
  case 'forex': case 'broker': case 'binary': {
   bentoforex = await getBuffer(picak+'LIVE FOREX')
   teks = `
-  *ZIM-BOT-V4 FOREX TRADING*\n\n*DESCRIPTION:* _Trade with Deriv broker ( formerly called Binary ) link above. Create a Real Synthetic account  You will get to trade famous indices like Volatility 75 Index, Crash, Boom and others. -Minimum deposit as low as 5 dollars.  -You can trade even in weekends,  these indices are available to trade 24 hours a day, 365 days a year. -No noise, Trade with Deriv broker ( formerly called Binary ) link above. The best Forex broker since year 2000. Create a Real Financial or Financial STP account  for currency pairs._\n\n*GET STARTED TODAY:*\n\n*LINK:* https://track.deriv.com/_hx9O43AkP_tBMfcXPt5VjGNd7ZgqdRLk/1\n\n*LINK2:* https://record.binary.com/_Mxrjb7udl0q6tyDIijdDK2Nd7ZgqdRLk/1/\n\n*CONTACT:* https://wa.me/+263775482759 or https://wa.me/263784675236_*for help*_`
+  *GAPPU-BOT FOREX TRADING*\n\n*DESCRIPTION:* _Trade with Deriv broker ( formerly called Binary ) link above. Create a Real Synthetic account  You will get to trade famous indices like Volatility 75 Index, Crash, Boom and others. -Minimum deposit as low as 5 dollars.  -You can trade even in weekends,  these indices are available to trade 24 hours a day, 365 days a year. -No noise, Trade with Deriv broker ( formerly called Binary ) link above. The best Forex broker since year 2000. Create a Real Financial or Financial STP account  for currency pairs._\n\n*GET STARTED TODAY:*\n\n*LINK:* https://track.deriv.com/_hx9O43AkP_tBMfcXPt5VjGNd7ZgqdRLk/1\n\n*LINK2:* https://record.binary.com/_Mxrjb7udl0q6tyDIijdDK2Nd7ZgqdRLk/1/\n\n*CONTACT:* https://wa.me/+263775482759 or https://wa.me/263784675236_*for help*_`
   let buttons = [
   {buttonId: `rpgmenu`, buttonText: {displayText: 'RPG'}, type: 1}
   ]
@@ -2254,10 +2254,10 @@ Please @${m.mentionedJid[0].split`@`[0]} to type accept/reject`
   title:"DONATE ME",
   body: "DRIPS OFC", 
   showAdAttribution: true,
-  thumbnail: fs.readFileSync("Zimbot/drips.jpg"),
+  thumbnail: fs.readFileSync("Zimbot/deepak.jpg"),
   mediaType:1,
-  mediaUrl: 'https://youtu.be/KNu-gr2h7bo',
-  sourceUrl: "https://youtu.be/KNu-gr2h7bog"
+  mediaUrl: 'https://youtu.be/DEEPAK',
+  sourceUrl: "https://youtu.be/DEEPAKg"
   }}
   }
   GappuBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -3310,7 +3310,7 @@ if (!regex1.test(args[0])) throw 'link!'
       body:"SUB DEEPAK OFC",
       showAdAttribution: true,
       mediaType:2,
-      thumbnail: fs.readFileSync('./drips.jpg'),
+      thumbnail: fs.readFileSync('./deepak.jpg'),
       mediaUrl:`https://youtu.be/DEEPAKOFC`, 
       sourceUrl:`https://youtu.be/DEEPAKOFC`, 
       }}
@@ -3330,9 +3330,9 @@ if (!regex1.test(args[0])) throw 'link!'
         body:"SUB DEEPAK OFC",
         showAdAttribution: true,
         mediaType:2,
-        thumbnail: fs.readFileSync(`./drips.jpg`) ,
+        thumbnail: fs.readFileSync(`./deepak.jpg`) ,
         mediaUrl:`https://youtu.be/DEEPAKOFC`, 
-        sourceUrl: `https://youtu.be/KNu-gr2h7bo` }}}, {quoted: m})
+        sourceUrl: `https://youtu.be/DEEPAK` }}}, {quoted: m})
 break
 case 'ghsearch': 
        case 'githubsearch': 
@@ -3397,7 +3397,7 @@ break
   id: 'sc'
  }
   }]
- fatihgans = fs.readFileSync('./Zimbot/drips.jpg')
+ fatihgans = fs.readFileSync('./Zimbot/deepak.jpg')
  let txt = `「 GappuBot Broadcast 」\n\n${text}`
  GappuBotInc.send5ButImg(i, txt, GappuBotInc.user.name, fatihgans, btn)
   }
@@ -3422,7 +3422,7 @@ for (let yoi of anu) {
   id: 'owner'
  }
   }]
- fatihgans = fs.readFileSync('./Zimbot/drips.jpg')
+ fatihgans = fs.readFileSync('./Zimbot/deepak.jpg')
  let txt = `「 GAPPU BOT BROADCAST 」\n\n${text}`
  GappuBotInc.send5ButImg(yoi, txt, `Broadcast By ${global.pengguna}`, fatihgans, btn)
 }
@@ -3794,8 +3794,8 @@ replay(mess.wait)
  showAdAttribution: true,
  thumbnail: global.thumb,
  mediaType:2,
- mediaUrl: `https://youtu.be/KNu-gr2h7bo`,
- sourceUrl: `https://youtu.be/KNu-gr2h7bo`
+ mediaUrl: `https://youtu.be/DEEPAK`,
+ sourceUrl: `https://youtu.be/DEEPAK`
  }}
  }
  XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -4181,7 +4181,7 @@ url: `${drips2.videos[0].url}`
 }, {
 urlButton: {
 displayText: `GITHUB`, 
-url: `https://github.com/zim-bot/zimbot-v4/fork`
+url: `https://github.com/GAPPU/DEEPAK`
 }
 }, {
 quickReplyButton: {
@@ -4243,7 +4243,7 @@ url: `${anu.url}`
 }, {
 urlButton: {
 displayText: `GITHUB`, 
-url: `https://github.com/zim-bot/zimbot-v4/fork`
+url: `https://github.com/GAPPU/DEEPAK`
 }
 }, {
 quickReplyButton: {
@@ -4289,9 +4289,9 @@ title:"GAPPU BOT",
 body:"SUB DEEPAK OFC",
 showAdAttribution: true,
 mediaType:2,
-thumbnail: fs.readFileSync(`./drips.jpg`) ,
+thumbnail: fs.readFileSync(`./deepak.jpg`) ,
 mediaUrl:`https://youtu.be/DEEPAKOFC`, 
-sourceUrl: `https://youtu.be/KNu-gr2h7bo` }}}, {quoted: m})
+sourceUrl: `https://youtu.be/DEEPAK` }}}, {quoted: m})
 }
 break
 case 'audio': {    
@@ -4314,9 +4314,9 @@ title:"GAPPU BOT",
 body:"DRIPS",
 showAdAttribution: true,
 mediaType:2,
-thumbnail: fs.readFileSync(`./drips.jpg`) ,
+thumbnail: fs.readFileSync(`./deepak.jpg`) ,
 mediaUrl:`https://youtu.be/DEEPAKOFC`, 
-sourceUrl: `https://youtu.be/KNu-gr2h7bo` }}}, {quoted: m})
+sourceUrl: `https://youtu.be/DEEPAK` }}}, {quoted: m})
 }
 break
 case 'ytmp4': case 'ytvideo': {
@@ -4339,9 +4339,9 @@ title:"GAPPU BOT",
 body:"DRIPS",
 showAdAttribution: true,
 mediaType:2,
-thumbnail: fs.readFileSync(`./drips.jpg`) ,
+thumbnail: fs.readFileSync(`./deepak.jpg`) ,
 mediaUrl:`https://youtu.be/DEEPAKOFC`, 
-sourceUrl: `https://youtu.be/KNu-gr2h7bo` }}}, {quoted: m})
+sourceUrl: `https://youtu.be/DEEPAK` }}}, {quoted: m})
 }
 break
 case 'ytshorts': case 'shorts': {
@@ -4412,9 +4412,9 @@ GappuBotInc.sendMessage(m.chat, { document : { url : baby1[0].link}, fileName : 
   body:"SUBSCRIBE DRIPS OFC",
   showAdAttribution: true,
   mediaType:2,
-  thumbnail: fs.readFileSync(`./drips.jpg`) ,
+  thumbnail: fs.readFileSync(`./deepak.jpg`) ,
   mediaUrl:`https://youtu.be/DEEPAKOFC`, 
-sourceUrl: `https://youtu.be/KNu-gr2h7bo` }}}, {quoted: m})
+sourceUrl: `https://youtu.be/DEEPAK` }}}, {quoted: m})
 }
 break
 case 'song': {
@@ -4575,9 +4575,9 @@ case 'fbdl': case 'fb': case 'facebook': case 'fbvideo': {
       body:"SUBSCRIBE DRIPS OFC",
       showAdAttribution: true,
       mediaType:2,
-      thumbnail: fs.readFileSync(`./drips.jpg`) ,
+      thumbnail: fs.readFileSync(`./deepak.jpg`) ,
       mediaUrl:`https://youtu.be/DEEPAKOFC`, 
-      sourceUrl: `https://youtu.be/KNu-gr2h7bo` }}}, {quoted: m})
+      sourceUrl: `https://youtu.be/DEEPAK` }}}, {quoted: m})
      
        
      }
@@ -5406,7 +5406,7 @@ case 'bcimage': case 'bcvideo': case 'bcaudio': {
 if (!isCreator) throw mess.owner
 if (!/video/.test(mime) && !/image/.test(mime) && !/audio/.test(mime)) throw `*Send/Reply Video/Audio/Image You Want to Broadcast With Caption* ${prefix + command}`
 let anu = await store.chats.all().map(v => v.id)
-let ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "6289523258649-1604595598@g.us"}, "message": {orderMessage: {itemCount: 2022,status: 200, thumbnail: fs.readFileSync('./drips.jpg'), surface: 200, message: `ZIM-BOT-INC`, orderTitle: 'ZIM-BOT-INC', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
+let ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "6289523258649-1604595598@g.us"}, "message": {orderMessage: {itemCount: 2022,status: 200, thumbnail: fs.readFileSync('./deepak.jpg'), surface: 200, message: `ZIM-BOT-INC`, orderTitle: 'ZIM-BOT-INC', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
 reply(`*Send Broadcast To* ${anu.length} *Group Chat, Time ${anu.length * 1.5} minutes*`)
 for (let i of anu) {
 await sleep(1500)
@@ -5584,9 +5584,9 @@ GappuBotInc.sendMessage(m.chat, { image: buf, jpegThumbnail:buf, caption: `Photo
   body:"SUBSCRIBE DRIPS OFC",
   showAdAttribution: true,
   mediaType:2,
-  thumbnail: fs.readFileSync(`./drips.jpg`) ,
+  thumbnail: fs.readFileSync(`./deepak.jpg`) ,
   mediaUrl:`https://youtu.be/DEEPAKOFC`, 
-sourceUrl: `https://youtu.be/KNu-gr2h7bo` }}}, {quoted: m})
+sourceUrl: `https://youtu.be/DEEPAK` }}}, {quoted: m})
 }
  
 //----END HERE-------\\
@@ -5717,9 +5717,9 @@ GappuBotInc.sendMessage(m.chat, { image: { url: anu }, caption: `Made by ${globa
   body:"SUBSCRIBE DRIPS OFC",
   showAdAttribution: true,
   mediaType:2,
-  thumbnail: fs.readFileSync(`./drips.jpg`) ,
+  thumbnail: fs.readFileSync(`./deepak.jpg`) ,
   mediaUrl:`https://youtu.be/DEEPAKOFC`, 
-sourceUrl: `https://youtu.be/KNu-gr2h7bo` }}}, {quoted: m})
+sourceUrl: `https://youtu.be/DEEPAK` }}}, {quoted: m})
 }
 //----END HERE--------\\
 
@@ -5760,9 +5760,9 @@ GappuBotInc.sendMessage(m.chat, { image: anu, caption: `*PHOTO OXY ${command}*` 
   body:"SUBSCRIBE DRIPS OFC",
   showAdAttribution: true,
   mediaType:2,
-  thumbnail: fs.readFileSync(`./drips.jpg`) ,
+  thumbnail: fs.readFileSync(`./deepak.jpg`) ,
   mediaUrl:`https://youtu.be/DEEPAKOFC`, 
-sourceUrl: `https://youtu.be/KNu-gr2h7bo` }}}, {quoted: m})
+sourceUrl: `https://youtu.be/DEEPAK` }}}, {quoted: m})
 }
 break
 
@@ -5789,9 +5789,9 @@ GappuBotInc.sendMessage(m.chat, { image: anu, caption: `*EPHOTO ${command}*` ,  
   body:"SUBSCRIBE DRIPS OFC",
   showAdAttribution: true,
   mediaType:2,
-  thumbnail: fs.readFileSync(`./drips.jpg`) ,
+  thumbnail: fs.readFileSync(`./deepak.jpg`) ,
   mediaUrl:`https://youtu.be/DEEPAKOFC`, 
-sourceUrl: `https://youtu.be/KNu-gr2h7bo` }}}, {quoted: m})
+sourceUrl: `https://youtu.be/DEEPAK` }}}, {quoted: m})
 }
 break
 
@@ -6151,20 +6151,20 @@ case 'igsearch':
   if (!text) throw '*Enter a Link Query! Example: https://i.imgur.com/rANDwCP.jpeg*'
   var dripa = `https://hardianto.xyz/api/rip?image=${text}&apikey=hardianto` 
   dri = await getBuffer(dripa)
-  GappuBotInc.sendMessage(m.chat, { image: dri,caption:'ZIM-BOT-V4' }, { quoted: m})
+  GappuBotInc.sendMessage(m.chat, { image: dri,caption:'GAPPU-BOT' }, { quoted: m})
 
 break// https://hardianto.xyz/api/beta/hacker2?apikey=hardianto&pp=https://i.ibb.co/1s8T3sY/48f7ce63c7aa.jpg
   case 'hackermaker':
   if (!text) throw '*Enter a Link Query! Example: https://i.imgur.com/rANDwCP.jpeg*'
   var dripa = `https://hardianto.xyz/api/beta/hacker2?apikey=hardianto&pp=${text}` 
   dri = await getBuffer(dripa)
-  GappuBotInc.sendMessage(m.chat, { image: dri,caption:'ZIM-BOT-V4' }, { quoted: m})
+  GappuBotInc.sendMessage(m.chat, { image: dri,caption:'GAPPU-BOT' }, { quoted: m})
 break //https://hardianto.xyz/api/maker/carbon?code=const%20anto%20=%20require(%27pahala%27)&color=cyan&apikey=hardianto
  case 'codecolor':
     if (!text) throw '*Enter a text*'
     var dripa = `https://hardianto.xyz/api/maker/carbon?code=${text}&color=cyan&apikey=hardianto` 
     dri = await getBuffer(dripa)
-    GappuBotInc.sendMessage(m.chat, { image: dri,caption:'ZIM-BOT-V4' }, { quoted: m})
+    GappuBotInc.sendMessage(m.chat, { image: dri,caption:'GAPPU-BOT' }, { quoted: m})
   break 
 case 'ipdomain':
     reply(mess.wait)
@@ -7322,7 +7322,7 @@ anu = `
 ┊🪨shortlinkcuttly -url-
 ┊🪨shortlinkisgd -url-
 ┊🪨brainly -query-
-└───〔 *_ᴢɪᴍ ʙᴏᴛ ɪɴᴄ_* 〕
+└───〔 *_ɢᴀᴘᴘᴜ ʙᴏᴛ ɪɴᴄ_* 〕
 
 
 ┌───〔 *_◉ᴏᴡɴᴇʀᴍᴇɴᴜ◉_* 〕
@@ -7349,7 +7349,7 @@ anu = `
 ┊🪨public
 ┊🪨self
 ┊🪨grouponly
-└───〔 *_ᴢɪᴍ ʙᴏᴛ ɪɴᴄ_* 〕
+└───〔 *_ɢᴀᴘᴘᴜ ʙᴏᴛ ɪɴᴄ_* 〕
 
 
 ┌───〔 *_◉ɢʀᴏᴜᴘᴍᴇɴᴜ◉_* 〕
@@ -7395,7 +7395,7 @@ anu = `
 ┊🪨demote -admin-
 ┊🪨promote -admin-
 ┊🪨editinfo -admin-
-└───〔 *_ᴢɪᴍ ʙᴏᴛ ɪɴᴄ_* 〕
+└───〔 *_ɢᴀᴘᴘᴜ ʙᴏᴛ ɪɴᴄ_* 〕
 
 
 ┌───〔 *_◉ᴛᴇxᴛᴘʀᴏᴍᴇɴᴜ◉_* 〕
@@ -7455,7 +7455,7 @@ anu = `
 ┊🪨glue -text-
 ┊🪨1917 -text-
 ┊🪨leaves -text-
-└───〔 *_ᴢɪᴍ ʙᴏᴛ ɪɴᴄ_* 〕
+└───〔 *_ɢᴀᴘᴘᴜ ʙᴏᴛ ɪɴᴄ_* 〕
 
 
 ┌───〔 *_ᴅᴏᴡɴʟᴏᴀᴅᴍᴇɴᴜ_* 〕
@@ -7505,7 +7505,7 @@ anu = `
 ┊🪨igtv -link-
 ┊🪨fbmp3 -link-
 ┊🪨ytdl -link-
-└───〔 *_ᴢɪᴍ ʙᴏᴛ ɪɴᴄ_* 〕
+└───〔 *_ɢᴀᴘᴘᴜ ʙᴏᴛ ɪɴᴄ_* 〕
 
 
 ┌───〔 *_ᴘʜᴏᴛꜰɪʟᴛᴇʀᴍᴇɴᴜ_* 〕
@@ -7547,7 +7547,7 @@ anu = `
 ┊🪨hdr -photo-
 ┊🪨viewfilter -photo-
 ┊🪨warmsunset -photo-
-└───〔 *_ᴢɪᴍ ʙᴏᴛ ɪɴᴄ_* 〕
+└───〔 *_ɢᴀᴘᴘᴜ ʙᴏᴛ ɪɴᴄ_* 〕
 
 
 ┌───〔 *_ɴꜱꜰᴡᴍᴇɴᴜ_* 〕
@@ -7571,7 +7571,7 @@ anu = `
 ┊🪨yuri
 ┊🪨thighs
 ┊🪨tentacles
-└───〔 *_ᴢɪᴍ ʙᴏᴛ ɪɴᴄ_* 〕
+└───〔 *_ɢᴀᴘᴘᴜ ʙᴏᴛ ɪɴᴄ_* 〕
 
 
 ┌───〔 *_ᴀɴɪᴍᴇᴍᴇɴᴜ_* 〕
@@ -7616,7 +7616,7 @@ anu = `
 ┊🪨awoo2
 ┊🪨animewall2
 ┊🪨searchanime -query-
-└───〔 *_ᴢɪᴍ ʙᴏᴛ ɪɴᴄ_* 〕
+└───〔 *_ɢᴀᴘᴘᴜ ʙᴏᴛ ɪɴᴄ_* 〕
 
 
 ┌───〔 *_ꜱᴇᴀʀᴄʜᴍᴇɴᴜ_* 〕
@@ -7646,7 +7646,7 @@ anu = `
 ┊🪨searchgroups -query-
 ┊🪨qoutesanime -query-
 ┊🪨gmsarena -query-
-└───〔 *_ᴢɪᴍ ʙᴏᴛ ɪɴᴄ_* 〕
+└───〔 *_ɢᴀᴘᴘᴜ ʙᴏᴛ ɪɴᴄ_* 〕
 
 ┌───〔*_◉ᴇᴘʜᴏᴛᴏ-ᴍᴇɴᴜ◉_*〕
 ┊🪨3d-wood
@@ -7682,7 +7682,7 @@ anu = `
 ┊🪨smeme -media-
 ┊🪨stickermeme -media-
 ┊🪨swm -sticker-
-└───〔 *_ᴢɪᴍ ʙᴏᴛ ɪɴᴄ_* 〕
+└───〔 *_ɢᴀᴘᴘᴜ ʙᴏᴛ ɪɴᴄ_* 〕
 
 ┌───〔 *_◉ᴅᴀᴛᴀʙᴀꜱᴇᴍᴇɴᴜ◉_* 〕
 ┊🪨addmsg -msg-
@@ -7692,7 +7692,7 @@ anu = `
 ┊🪨setcmd -msg-
 ┊🪨delcmd -msg-
 ┊🪨listcmd -msg-
-└───〔 *_ᴢɪᴍ ʙᴏᴛ ɪɴᴄ_* 〕
+└───〔 *_ɢᴀᴘᴘᴜ ʙᴏᴛ ɪɴᴄ_* 〕
 
 ┌───〔 *_◉Photooxyᴍᴇɴᴜ◉_* 〕
 ┊🪨silk -text-
@@ -7720,7 +7720,7 @@ anu = `
 ┊🪨yellowroses -text-
 ┊🪨wolfmetal -text-
 ┊🪨underwaterocean -text-
-└───〔 *_ᴢɪᴍ ʙᴏᴛ ɪɴᴄ_* 〕
+└───〔 *_ɢᴀᴘᴘᴜ ʙᴏᴛ ɪɴᴄ_* 〕
 
 
 ┌───〔 *_◉ᴍᴇɴᴜ ʀᴘɢ◉_* 〕
@@ -7899,7 +7899,7 @@ anu = `
         }
         
     var buffer = await getBuffer(ppuser)
-    const buttonsDefault = [{ urlButton: { displayText: `SUBSCRIBE`, url : `https://www.youtube.com/c/DRIPSOFC` } }, { urlButton: { displayText: `GITHUB`, url : `https://github.com/zim-bot/zimbot-v4/fork` } },
+    const buttonsDefault = [{ urlButton: { displayText: `SUBSCRIBE`, url : `https://www.youtube.com/c/DRIPSOFC` } }, { urlButton: { displayText: `GITHUB`, url : `https://github.com/GAPPU/DEEPAK` } },
     {					
       quickReplyButton: {
       displayText: 'SPEED',
@@ -7932,9 +7932,9 @@ anu = `
       body:"DRIPS OFC",
       showAdAttribution: true,
       mediaType:2,
-      thumbnail: fs.readFileSync(`./drips.jpg`) ,
+      thumbnail: fs.readFileSync(`./deepak.jpg`) ,
       mediaUrl:`https://youtu.be/DEEPAKOFC`, 
-    sourceUrl: `https://youtu.be/KNu-gr2h7bo`
+    sourceUrl: `https://youtu.be/DEEPAK`
     }}}, {quoted:m})
     } else if  (setbot.templateMsg) {
       GappuBotInc.send5ButMsg(m.chat, anu, global.botname, btn)
@@ -8015,7 +8015,7 @@ anu = `
         body:"SUB DEEPAK OFC",
         showAdAttribution: true,
         mediaType:2,
-        thumbnail: fs.readFileSync('./drips.jpg'),
+        thumbnail: fs.readFileSync('./deepak.jpg'),
         mediaUrl:`https://youtu.be/DEEPAKOFC`, 
         sourceUrl:`https://youtu.be/DEEPAKOFC`, 
         }}
@@ -8065,7 +8065,7 @@ anu = `
 ┊🪨public
 ┊🪨self
 ┊🪨grouponly
-└───〔 *_ᴢɪᴍ ʙᴏᴛ ɪɴᴄ_* 〕
+└───〔 *_ɢᴀᴘᴘᴜ ʙᴏᴛ ɪɴᴄ_* 〕
 `
 let message = await prepareWAMessageMedia({ image: buffer, jpegThumbnail:buffer }, { upload: GappuBotInc.waUploadToServer })
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -8117,7 +8117,7 @@ anu = `
 ┊🪨setcmd -msg-
 ┊🪨delcmd -msg-
 ┊🪨listcmd -msg-
-└───〔 *_ᴢɪᴍ ʙᴏᴛ ɪɴᴄ_* 〕
+└───〔 *_ɢᴀᴘᴘᴜ ʙᴏᴛ ɪɴᴄ_* 〕
 `
 let message = await prepareWAMessageMedia({ image: buffer, jpegThumbnail:buffer }, { upload: GappuBotInc.waUploadToServer })
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -8187,7 +8187,7 @@ case 'photooxymenu': {
 ┊🪨yellowroses -text-
 ┊🪨wolfmetal -text-
 ┊🪨underwaterocean -text-
-└───〔 *_ᴢɪᴍ ʙᴏᴛ ɪɴᴄ_* 〕
+└───〔 *_ɢᴀᴘᴘᴜ ʙᴏᴛ ɪɴᴄ_* 〕
   `
   let message = await prepareWAMessageMedia({ image: buffer, jpegThumbnail:buffer }, { upload: GappuBotInc.waUploadToServer })
   const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -8274,7 +8274,7 @@ anu = `
 ┊🪨demote -admin-
 ┊🪨promote -admin-
 ┊🪨editinfo -admin-
-└───〔 *_ᴢɪᴍ ʙᴏᴛ ɪɴᴄ_* 〕
+└───〔 *_ɢᴀᴘᴘᴜ ʙᴏᴛ ɪɴᴄ_* 〕
 `
 let message = await prepareWAMessageMedia({ image: buffer, jpegThumbnail:buffer }, { upload: GappuBotInc.waUploadToServer })
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -8375,7 +8375,7 @@ anu = `
 ┊🪨glue -text-
 ┊🪨1917 -text-
 ┊🪨leaves -text-
-└───〔 *_ᴢɪᴍ ʙᴏᴛ ɪɴᴄ_* 〕
+└───〔 *_ɢᴀᴘᴘᴜ ʙᴏᴛ ɪɴᴄ_* 〕
 `
 let message = await prepareWAMessageMedia({ image: buffer, jpegThumbnail:buffer }, { upload: GappuBotInc.waUploadToServer })
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -8467,7 +8467,7 @@ anu =`
 ┊🪨igtv -link-
 ┊🪨fbmp3 -link-
 ┊🪨ytdl -link-
-└───〔 *_ᴢɪᴍ ʙᴏᴛ ɪɴᴄ_* 〕
+└───〔 *_ɢᴀᴘᴘᴜ ʙᴏᴛ ɪɴᴄ_* 〕
 `
 let message = await prepareWAMessageMedia({ image: buffer, jpegThumbnail:buffer }, { upload: GappuBotInc.waUploadToServer })
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -8551,7 +8551,7 @@ anu =`
 ┊🪨hdr -photo-
 ┊🪨viewfilter -photo-
 ┊🪨warmsunset -photo-
-└───〔 *_ᴢɪᴍ ʙᴏᴛ ɪɴᴄ_* 〕
+└───〔 *_ɢᴀᴘᴘᴜ ʙᴏᴛ ɪɴᴄ_* 〕
 `
 let message = await prepareWAMessageMedia({ image: buffer, jpegThumbnail:buffer }, { upload: GappuBotInc.waUploadToServer })
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -8617,7 +8617,7 @@ case 'nsfwmenu':{
 ┊🪨yuri
 ┊🪨thighs
 ┊🪨tentacles
-└───〔 *_ᴢɪᴍ ʙᴏᴛ ɪɴᴄ_* 〕
+└───〔 *_ɢᴀᴘᴘᴜ ʙᴏᴛ ɪɴᴄ_* 〕
   `
   let message = await prepareWAMessageMedia({ image: buffer, jpegThumbnail:buffer }, { upload: GappuBotInc.waUploadToServer })
   const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -8704,7 +8704,7 @@ case 'animemenu':{
 ┊🪨awoo2
 ┊🪨animewall2
 ┊🪨searchanime -query-
-└───〔 *_ᴢɪᴍ ʙᴏᴛ ɪɴᴄ_* 〕
+└───〔 *_ɢᴀᴘᴘᴜ ʙᴏᴛ ɪɴᴄ_* 〕
   `
   let message = await prepareWAMessageMedia({ image: buffer, jpegThumbnail:buffer }, { upload: GappuBotInc.waUploadToServer })
   const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -8769,7 +8769,7 @@ case 'convertmenu': {
 ┊🪨smeme -media-
 ┊🪨stickermeme -media-
 ┊🪨swm -sticker-
-└───〔 *_ᴢɪᴍ ʙᴏᴛ ɪɴᴄ_* 〕
+└───〔 *_ɢᴀᴘᴘᴜ ʙᴏᴛ ɪɴᴄ_* 〕
   `
   let message = await prepareWAMessageMedia({ image: buffer, jpegThumbnail:buffer }, { upload: GappuBotInc.waUploadToServer })
   const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -8830,7 +8830,7 @@ case 'toolmenu': {
 ┊🪨shortlinkcuttly -url-
 ┊🪨shortlinkisgd -url-
 ┊🪨brainly -query-
-└───〔 *_ᴢɪᴍ ʙᴏᴛ ɪɴᴄ_* 〕
+└───〔 *_ɢᴀᴘᴘᴜ ʙᴏᴛ ɪɴᴄ_* 〕
   `
   let message = await prepareWAMessageMedia({ image: buffer, jpegThumbnail:buffer }, { upload: GappuBotInc.waUploadToServer })
   const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -8902,7 +8902,7 @@ case 'searchmenu':{
 ┊🪨searchgroups -query-
 ┊🪨qoutesanime -query-
 ┊🪨gmsarena -query-
-└───〔 *_ᴢɪᴍ ʙᴏᴛ ɪɴᴄ_* 〕
+└───〔 *_ɢᴀᴘᴘᴜ ʙᴏᴛ ɪɴᴄ_* 〕
 
   `
   let message = await prepareWAMessageMedia({ image: buffer, jpegThumbnail:buffer }, { upload: GappuBotInc.waUploadToServer })
