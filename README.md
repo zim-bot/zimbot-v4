@@ -46,6 +46,7 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 
 ## >  THIS BOT IT USE MULTI DEVICE BAILEYS
 
+## > CHANGE LINK IN LIB FOLDER 📁📂 CHANGE HERE
 
 ``` 
 apt install nodejs
