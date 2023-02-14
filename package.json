@@ -84,7 +84,6 @@
     "util": "^0.12.4",
     "xfarr-api": "^2.0.0",
     "yargs": "^17.2.1",
-    "yt-search": "^2.10.3",
     "zimbot-v4": "4.0.1"
   },
   "directories": {
