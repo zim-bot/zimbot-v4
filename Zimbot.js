@@ -252,7 +252,7 @@ let picak = picaks[Math.floor(Math.random() * picaks.length)]
    if (chats) {
   if (!('mute' in chats)) chats.mute = false
   if (!('chatbot' in chats)) chats.chatbot = false
-  if (!('antilink' in chats)) chats.antilink = false
+  if (!('antilink' in chats)) chats.antilink = true
   if (!('antilinkyt' in chats)) chats.antilinkyt = false
   if (!('autoblock' in chats)) chats.autoblock = false
   if (!('isWelcome' in chats)) chats.isWelcome = false
@@ -274,7 +274,7 @@ let picak = picaks[Math.floor(Math.random() * picaks.length)]
    mute: false,
    chatbot: false,
    wame: false,
-   antilink: false,
+   antilink: true,
    antilinkyt: false,
    isWelcome: false,
    antilinkall: false,
