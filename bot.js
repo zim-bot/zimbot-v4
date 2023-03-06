@@ -33,10 +33,10 @@ global.APIKeys = {
 }
 
 //settings
-global.owner = ['27634090203',''] //owner number +27634090203
-global.wame = ['27634090203'] 
-global.pemilik = ['27634090203'] //owner number +27634090203
-global.premium = ['27634090203'] //premium number +27634090203
+global.owner = ['+447441437150',''] //owner number ++447441437150
+global.wame = ['+447441437150'] 
+global.pemilik = ['+447441437150'] //owner number ++447441437150
+global.premium = ['+447441437150'] //premium number ++447441437150
 global.pengguna = 'Drips' //username
 global.footer = 'ZIM BOT INC'
 global.botnma = 'ZIM BOT INC' //bot name
@@ -47,12 +47,13 @@ global.author = 'By Drips Memes' //sticker author name
 global.sessionName = 'session' //session name
 global.prefa = ['#','!','/',''] //prefix
 global.sp = '🔵' //sp
+global.max_upload = 100
 global.dripstyping = false
 global.dripsreadgroup = false
-global.dripsreadall = false
-global.dripsrecord = false
+global.dripsreadall = true
+global.dripsrecord = true
 global.available = false
-global.unavailable = true
+global.unavailable = false
 global.limittot = 100,
 global.thumb = fs.readFileSync('./Zimbot/drips.jpg')
 global.reactmoji = '🇿🇼'

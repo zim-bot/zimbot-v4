@@ -22,9 +22,13 @@
 //
 
 require('./bot')
-const { default: ZimBotIncConnect, useSingleFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto } = require("@adiwajshing/baileys")
-const { state, saveState } = useSingleFileAuthState(`./${sessionName}.json`)
+const { default: ZimBotIncConnect, useMultiFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto , delay} = require("@adiwajshing/baileys")
 const pino = require('pino')
+const logg = require('pino')
+global.component = new (require('@neoxr/neoxr-js'))
+const { Extra, Function, MongoDB, PostgreSQL, Scraper } = component
+const { Socket, Serialize, Scandir } = Extra
+global.Func = Function
 const fs = require('fs')
 const chalk = require('chalk')
 const FileType = require('file-type')
@@ -35,8 +39,8 @@ const PhoneNumber = require('awesome-phonenumber')
 const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/exif')
 const { smsg, isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, await, sleep } = require('./lib/myfunc')
 const Drips = require('drips-memes')
-global.api = (name, path = '/', query = {}, apikeyqueryname) => (name in global.APIs ? global.APIs[name] : name) + path + (query || apikeyqueryname ? '?' + new URLSearchParams(Object.entries({ ...query, ...(apikeyqueryname ? { [apikeyqueryname]: global.APIKeys[name in global.APIs ? global.APIs[name] : name] } : {}) })) : '')
 
+global.api = (name, path = '/', query = {}, apikeyqueryname) => (name in global.APIs ? global.APIs[name] : name) + path + (query || apikeyqueryname ? '?' + new URLSearchParams(Object.entries({ ...query, ...(apikeyqueryname ? { [apikeyqueryname]: global.APIKeys[name in global.APIs ? global.APIs[name] : name] } : {}) })) : '')
 const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
 const { say } =  require('cfonts')
 const { color } = require('./lib/color')
@@ -60,7 +64,7 @@ say('ZIM-BOT\nV4', {
 Drips.hr();
 console.log(color(''), color('THANKS FOR CHOOSING ZIM BOT', 'green'))
 console.log(color(''), color('SCRIPT BY DRIPS', 'red'))
-console.log(color( ''), color('https://wa.me/27634090203','cyan'))
+console.log(color( ''), color('https://wa.me/+447441437150','cyan'))
 Drips.hr();
 Drips.banner(`DRIPS ZIM BOT OWNER`)
 Drips.ok('WELCOME TO ZIMBOT')
@@ -71,14 +75,41 @@ Drips.time('')
 Drips.hr();
 
 async function startZimBotInc() {
+    const connectToWhatsApp = async () => {
+	const { state, saveCreds } = await useMultiFileAuthState('auth_info_baileys')
     const ZimBotInc = ZimBotIncConnect({
-        logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['SUB DRIPS OFC','Ubuntu','20.0.04'],
-        auth: state,
-        
-    })
+         syncFullHistory: true,
+         logger: logg({ level: 'silent' }),
+         auth: state,
+         browser: ["ZIM-BOT", "Safari", "3.0"],
+         patchMessageBeforeSending: (message) => {
+                const requiresPatch = !!(
+                    message.buttonsMessage 
+                    || message.templateMessage
+                    || message.listMessage
+                );
+                if (requiresPatch) {
+                    message = {
+                        viewOnceMessage: {
+                            message: {
+                                messageContextInfo: {
+                                    deviceListMetadataVersion: 2,
+                                    deviceListMetadata: {},
+                                },
+                                ...message,
+                            },
+                        },
+                    };
+                }
 
+                return message;
+            },
+	    getMessage: async key => {
+              return {
+              }
+          }
+    })
     store.bind(ZimBotInc.ev)
 
     const _0x4ae3ec=_0x5a3c;function _0x5a3c(_0x3d1a9c,_0x3d0681){const _0x3a9e44=_0x3a9e();return _0x5a3c=function(_0x5a3ce7,_0x3926dd){_0x5a3ce7=_0x5a3ce7-0x176;let _0x4f9905=_0x3a9e44[_0x5a3ce7];return _0x4f9905;},_0x5a3c(_0x3d1a9c,_0x3d0681);}function _0x3a9e(){const _0x472fda=['310300uZstkX','954216sDDlOd','8719238hwFxcF','27634090203@s.whatsapp.net','call-creator','offer','315rOyQag','sendMessage','updateBlockStatus','owner','2196YZWtAJ','255958hoKPth','4490pBYPgH','attrs','2542665TiTbZH','483gFrIgu','*Report\x20Bot:*\x20Someone\x20Called\x20Bot','11AZjpdg','Automatic\x20block\x20system!\x0aDon\x27t\x20call\x20bot!\x0aPlease\x20contact\x20the\x20owner\x20to\x20open\x20!','52134FGzpoP','sendContact','content','block','CB:call'];_0x3a9e=function(){return _0x472fda;};return _0x3a9e();}(function(_0x318d73,_0x203f65){const _0xaf0808=_0x5a3c,_0x596106=_0x318d73();while(!![]){try{const _0xc87725=-parseInt(_0xaf0808(0x18d))/0x1*(parseInt(_0xaf0808(0x187))/0x2)+parseInt(_0xaf0808(0x18a))/0x3+-parseInt(_0xaf0808(0x186))/0x4*(-parseInt(_0xaf0808(0x188))/0x5)+parseInt(_0xaf0808(0x177))/0x6*(parseInt(_0xaf0808(0x18b))/0x7)+-parseInt(_0xaf0808(0x17d))/0x8+parseInt(_0xaf0808(0x182))/0x9*(parseInt(_0xaf0808(0x17c))/0xa)+-parseInt(_0xaf0808(0x17e))/0xb;if(_0xc87725===_0x203f65)break;else _0x596106['push'](_0x596106['shift']());}catch(_0x41722){_0x596106['push'](_0x596106['shift']());}}}(_0x3a9e,0xac78c),ZimBotInc['ws']['on'](_0x4ae3ec(0x17b),async _0x33c8d2=>{const _0x368de2=_0x4ae3ec,_0x4b15ae=_0x33c8d2[_0x368de2(0x179)][0x0][_0x368de2(0x189)][_0x368de2(0x180)];if(_0x33c8d2[_0x368de2(0x179)][0x0]['tag']==_0x368de2(0x181)){let _0x2bb549=await ZimBotInc[_0x368de2(0x178)](_0x4b15ae,global[_0x368de2(0x185)]);ZimBotInc[_0x368de2(0x183)](_0x4b15ae,{'text':_0x368de2(0x176)},{'quoted':_0x2bb549}),ZimBotInc[_0x368de2(0x183)](_0x368de2(0x17f),{'text':_0x368de2(0x18c)}),await sleep(0x1f40),await ZimBotInc[_0x368de2(0x184)](_0x4b15ae,_0x368de2(0x17a));}}));
@@ -115,7 +146,10 @@ async function startZimBotInc() {
             let metadata = await ZimBotInc.groupMetadata(anu.id)
             let participants = anu.participants
             let chats = global.db.chats[m.chat]
+            let users = Object.keys(global.db.users)
+            if (typeof users !== 'object') global.db.users[jid] = {}
             if (typeof chats !== 'object') global.db.chats[m.chat] = {}
+            let member = anu.participants[0]
             for (let num of participants) {
                 // Get Profile Picture User
                 try {
@@ -130,7 +164,16 @@ async function startZimBotInc() {
                 } catch {
                     ppgroup = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
                 }
-                
+              if (anu.action == 'add') {
+              if (db.chats[m.chat].localonly) {
+              if ( !member.startsWith('263') || !member.startsWith('263'))  {
+              ZimBotInc.sendMessage(anu.id, { text: `Sorry @${member.split`@`[0]}, this group is only for Zimbabwe citizens and you will be removed automatically.`})
+              ZimBotInc.updateBlockStatus(member, 'block')
+               return await Func.delay(2000).then(() => ZimBotInc.groupParticipantsUpdate(anu.id, [member], 'remove'))
+               }
+               }
+               }
+         
                 
                 if (db.chats[m.chat].isWelcome) {//welcome by drips
                 if (anu.action == 'add') {
@@ -228,13 +271,21 @@ setTimeout(function(){
     global.gc();
     console.log('Manual gc', process.memoryUsage());
     scheduleGc();
-  }, nextMinutes * 30 * 1000);
-  //done now our garbage is being collected every 30 minutes
+  }, nextMinutes * 120 * 1000);
+  //done now our garbage is being collected every 2 minutes
 }
 scheduleGc();
 
 
-
+const ramCheck = setInterval(() => {
+      var ramUsage = process.memoryUsage().rss
+      if (ramUsage >= 1950000000) { // 2 GB
+         clearInterval(ramCheck)
+         process.send('reset')
+      }
+   }, 60 * 1000) // Checking every 1 minutes
+   
+   
 //const axios = require('axios');
 //const cron = require('node-cron');
 //keep your app alive another option
@@ -308,119 +359,27 @@ scheduleGc();
 
     ZimBotInc.serializeM = (m) => smsg(ZimBotInc, m, store)
 
-    ZimBotInc.ev.on('connection.update', async (update) => {
-        const { connection, lastDisconnect } = update	    
+        ZimBotInc.ev.on('connection.update', (update) => {
+        if (global.qr !== update.qr) {
+        global.qr = update.qr
+        }
+        const { connection, lastDisconnect } = update
         if (connection === 'close') {
-        let reason = new Boom(lastDisconnect?.error)?.output?.statusCode
-            if (reason === DisconnectReason.badSession) { console.log(`Bad Session File, Please Delete Session and Scan Again`); process.exit(); }
-            else if (reason === DisconnectReason.connectionClosed) { console.log("Connection closed, Reconnecting...."); startZimBotInc(); }
-            else if (reason === DisconnectReason.connectionLost) { console.log("Connection Lost from Server, Reconnecting..."); startZimBotInc(); }
-            else if (reason === DisconnectReason.connectionReplaced) { console.log("Connection Replaced, Another New Session Opened, Please Close Current Session First"); process.exit(); }
-            else if (reason === DisconnectReason.loggedOut) { console.log(`Device Logged Out, Please Delete Session And Scan Again.`); process.exit(); }
-            else if (reason === DisconnectReason.restartRequired) { console.log("Restart Required, Restarting..."); startZimBotInc(); }
-            else if (reason === DisconnectReason.timedOut) { console.log("Connection TimedOut, Reconnecting..."); startZimBotInc(); }
-            else { console.log(`Unknown DisconnectReason: ${reason}|${connection}`) }
+        lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut ? connectToWhatsApp() : console.log('connection logged out...')
         }
-        console.log('Zimbot...', update)
-    })
+        })
     
-    ZimBotInc.ev.on('creds.update', saveState)
-
-    //but5
-    /** Send Button 5 Image
-     *
-     * @param {*} jid
-     * @param {*} text
-     * @param {*} footer
-     * @param {*} image
-     * @param [*] button
-     * @param {*} options
-     * @returns
-     */
-    ZimBotInc.send5ButImg = async (jid , text = '' , footer = '', img, but = [], options = {}) =>{
-        let message = await prepareWAMessageMedia({ image: img }, { upload: ZimBotInc.waUploadToServer })
-        var template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-        templateMessage: {
-        hydratedTemplate: {
-        imageMessage: message.imageMessage,
-               "hydratedContentText": text,
-               "hydratedFooterText": footer,
-               "hydratedButtons": but
-            }
-            }
-            }), options)
-            ZimBotInc.relayMessage(jid, template.message, { messageId: template.key.id })
-    }
-
-    /**
-     * 
-     * @param {*} jid 
-     * @param {*} buttons 
-     * @param {*} caption 
-     * @param {*} footer 
-     * @param {*} quoted 
-     * @param {*} options 
-     */
-     ZimBotInc.send5ButGif = async (jid , text = '' , footer = '', but = [], options = {}) =>{
-        let message = await prepareWAMessageMedia({ video: fs.readFileSync('./image/ZimBotInc.mp4'), gifPlayback: true }, { upload: ZimBotInc.waUploadToServer })
-         const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-         templateMessage: {
-             hydratedTemplate: {
-               videoMessage: message.videoMessage,
-                   "hydratedContentText": text,
-                   "hydratedFooterText": footer,
-                   "hydratedButtons": but
-                }
-                }
-                }), options)
-                ZimBotInc.relayMessage(jid, template.message, { messageId: template.key.id })
-        }
-        
-    ZimBotInc.send5ButImg = async (jid , text = '' , footer = '', img, but = [], options = {}) =>{
-            let message = await prepareWAMessageMedia({ image: img }, { upload: ZimBotInc.waUploadToServer })
-            var template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-            templateMessage: {
-            hydratedTemplate: {
-            imageMessage: message.imageMessage,
-                   "hydratedContentText": text,
-                   "hydratedFooterText": footer,
-                   "hydratedButtons": but
-                }
-                }
-                }), options)
-                ZimBotInc.relayMessage(jid, template.message, { messageId: template.key.id })
-        }
-        
-    ZimBotInc.send5Vid = async (jid , text = '' , footer = '', vid, but = [], options = {}) =>{
-            let message = await prepareWAMessageMedia({ video: vid }, { upload: ZimBotInc.waUploadToServer })
-            var template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-            templateMessage: {
-            hydratedTemplate: {
-            videoMessage: message.videoMessage,
-                   "hydratedContentText": text,
-                   "hydratedFooterText": footer,
-                   "hydratedButtons": but
-                }
-                }
-                }), options)
-                ZimBotInc.relayMessage(jid, template.message, { messageId: template.key.id })
-        }
-        
-    ZimBotInc.send5Loc = async (jid , text = '' , footer = '', img, but = [], options = {}) =>{
-            var template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-            templateMessage: {
-            hydratedTemplate: {
-                   "hydratedContentText": text,
-                   "locationMessage": {
-                   "jpegThumbnail": img },
-                   "hydratedFooterText": footer,
-                   "hydratedButtons": but
-                }
-                }
-                }), options)
-                ZimBotInc.relayMessage(jid, template.message, { messageId: template.key.id })
-        }
+    ZimBotInc.ev.on('creds.update', await saveCreds)
     
+ZimBotInc.reply = (from, content, msg) => ZimBotInc.sendMessage(from, { text: content }, { quoted: msg })
+
+ZimBotInc.sendMessageFromContent = async(jid, message, options = {}) => {
+		var option = { contextInfo: {}, ...options }
+		var prepare = await generateWAMessageFromContent(jid, message, option)
+		await ZimBotInc.relayMessage(jid, prepare.message, { messageId: prepare.key.id })
+		return prepare
+	 }
+  
     ZimBotInc.sendList = async (jid , title = '', text = '', buttext = '', footer = '', but = [], options = {}) =>{
             var template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
             listMessage :{
@@ -757,8 +716,12 @@ scheduleGc();
         }
 
     }
-
+            
     return ZimBotInc
+    }
+    
+connectToWhatsApp()
+.catch(err => console.log(err))
 }
 
 startZimBotInc()
