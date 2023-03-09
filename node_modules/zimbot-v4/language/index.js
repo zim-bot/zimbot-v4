@@ -1,1 +1,0 @@
-exports.ind = require('./help')
