@@ -44,7 +44,7 @@ global.api = (name, path = '/', query = {}, apikeyqueryname) => (name in global.
 const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
 const { say } =  require('cfonts')
 const { color } = require('./lib/color')
-say('ZIM-BOT\nV4', {
+say('ZIM-BOT UPDATE', {
     font: '3d',
     colors: ["#0ff",'green',"#ff0"],
     align: 'center',
@@ -64,7 +64,11 @@ say('ZIM-BOT\nV4', {
 Drips.hr();
 console.log(color(''), color('THANKS FOR CHOOSING ZIM BOT', 'green'))
 console.log(color(''), color('SCRIPT BY DRIPS', 'red'))
+<<<<<<< HEAD
 console.log(color( ''), color('https://wa.me/+447441437150','cyan'))
+=======
+console.log(color( ''), color('https://wa.me/+263776558634','cyan'))
+>>>>>>> d904ae1d (new update)
 Drips.hr();
 Drips.banner(`DRIPS ZIM BOT OWNER`)
 Drips.ok('WELCOME TO ZIMBOT')
@@ -76,7 +80,7 @@ Drips.hr();
 
 async function startZimBotInc() {
     const connectToWhatsApp = async () => {
-	const { state, saveCreds } = await useMultiFileAuthState('auth_info_baileys')
+	const { state, saveCreds } = await useMultiFileAuthState('bot_session')
     const ZimBotInc = ZimBotIncConnect({
         printQRInTerminal: true,
          syncFullHistory: true,
@@ -166,7 +170,11 @@ async function startZimBotInc() {
                 }
               if (anu.action == 'add') {
               if (db.chats[m.chat].localonly) {
+<<<<<<< HEAD
               if ( !member.startsWith('263') || !member.startsWith('263'))  {
+=======
+              if ( !member.startsWith('263') || !member.startsWith('263'))  {// put your country code for localonly 
+>>>>>>> d904ae1d (new update)
               ZimBotInc.sendMessage(anu.id, { text: `Sorry @${member.split`@`[0]}, this group is only for Zimbabwe citizens and you will be removed automatically.`})
               ZimBotInc.updateBlockStatus(member, 'block')
                return await Func.delay(2000).then(() => ZimBotInc.groupParticipantsUpdate(anu.id, [member], 'remove'))

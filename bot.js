@@ -22,6 +22,7 @@
 //
 const fs = require('fs')
 const chalk = require('chalk')
+<<<<<<< HEAD
 
 //global apis
 global.APIs = {
@@ -32,6 +33,9 @@ global.APIKeys = {
 	'https://zenzapi.xyz': '805a6c3fa9', //api keys from zenzi
 }
 
+=======
+global.Api = new (require('./plugins/neoxrApi.js'))(process.env.API_KEY)
+>>>>>>> d904ae1d (new update)
 //settings
 global.owner = ['+447441437150',''] //owner number ++447441437150
 global.wame = ['+447441437150'] 

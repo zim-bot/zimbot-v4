@@ -1,0 +1,5 @@
+
+API_KEY = ''
+
+### Open AI : https://beta.openai.com/account/api-keys
+OPENAI_API_KEY = ''
