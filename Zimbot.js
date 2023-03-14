@@ -41,12 +41,12 @@ const yts = require('youtube-yts')
 const { Readability } = require('@mozilla/readability');
 const moment = require('moment-timezone')
 const { JSDOM } = require('jsdom')
-const { igApi, getSessionId } = require('insta-fetcher')
-let ig = new igApi("csrftoken=6wrPrUbsa05Csm9wlqxAOSqRwxxscjD;rur=16771\05427758921939\0541695476019:01f7994241f5e244ccf1bb676853d91b4f281e385e564f6c99a3592b27b0a39dada825e8;mid=Yy21jQALAAEmUl5E0beHHz_eVvyI;ds_user_id=27758921939;sessionid=27758921939%3ASGdS1WkMZToRfs%3A12%3AAYe5Sp23sp78pv0PnIRL6X-ySJdCDpe4uxbuJxtcxw;ig_did=09B76BA7-2D56-42E5-89BB-3584A9EAD69B");
-ig.setCookie("csrftoken=6wrPrUbsa05Csm9wlqxAOSqRwxxscjD;rur=16771\05427758921939\0541695476019:01f7994241f5e244ccf1bb676853d91b4f281e385e564f6c99a3592b27b0a39dada825e8;mid=Yy21jQALAAEmUl5E0beHHz_eVvyI;ds_user_id=27758921939;sessionid=27758921939%3ASGdS1WkMZToRfs%3A12%3AAYe5Sp23sp78pv0PnIRL6X-ySJdCDpe4uxbuJxtcxw;ig_did=09B76BA7-2D56-42E5-89BB-3584A9EAD69B");
 const speed = require('performance-now')
 const { performance } = require('perf_hooks')
 const { Primbon } = require('scrape-primbon')
+const { igApi, getSessionId } = require('insta-fetcher')
+let ig = new igApi("csrftoken=6wrPrUbsa05Csm9wlqxAOSqRwxxscjD;rur=16771\05427758921939\0541695476019:01f7994241f5e244ccf1bb676853d91b4f281e385e564f6c99a3592b27b0a39dada825e8;mid=Yy21jQALAAEmUl5E0beHHz_eVvyI;ds_user_id=27758921939;sessionid=27758921939%3ASGdS1WkMZToRfs%3A12%3AAYe5Sp23sp78pv0PnIRL6X-ySJdCDpe4uxbuJxtcxw;ig_did=09B76BA7-2D56-42E5-89BB-3584A9EAD69B");
+ig.setCookie("csrftoken=6wrPrUbsa05Csm9wlqxAOSqRwxxscjD;rur=16771\05427758921939\0541695476019:01f7994241f5e244ccf1bb676853d91b4f281e385e564f6c99a3592b27b0a39dada825e8;mid=Yy21jQALAAEmUl5E0beHHz_eVvyI;ds_user_id=27758921939;sessionid=27758921939%3ASGdS1WkMZToRfs%3A12%3AAYe5Sp23sp78pv0PnIRL6X-ySJdCDpe4uxbuJxtcxw;ig_did=09B76BA7-2D56-42E5-89BB-3584A9EAD69B");
 const Config = require('./drips');
 const { color, bgcolor } = require("./lib/color");
 const simpleGit = require('simple-git');
@@ -59,7 +59,6 @@ const { smsg, formatp, tanggal, formatDate, getTime,  sleep, clockString, fetchJ
 /*let { addLevelingId, addLevelingLevel, addLevelingXp, getLevelingId, getLevelingLevel, getLevelingXp } = require("./lib/lvlfunction")*/
 const speedofbot = require("performance-now")
 const { mediafireDl } = require('./lib/mediafire.js')
-const { MAX_TOKEN, OPENAI_KEY } = setting = require('./chatGPT.json');
 const { lirikLagu } = require('./lib/lirik.js')
 const { fromBuffer } = require('file-type')
 const mel = require('kitsune-api');
@@ -69,16 +68,7 @@ const ffmpeg = require('fluent-ffmpeg')
 const { checkPetualangUser, addInventori, addBesi, sellBesi, getBesi, addDm, sellDm, getDm, addEmas, sellEmas, getEmas, addFish, sellFish, getFish } = require('./tez.js')
 const { addLevelingId, addLevelingLevel ,addLevelingXp, getLevelingId, getLevelingLevel, getLevelingXp } = require('./level')
 const { isLimit, limitAdd, getLimit, giveLimit, addBalance, kurangBalance, getBalance, isGame, gameAdd, givegame, cekGLimit } = require('./limit')
-<<<<<<< HEAD
-let settingu = JSON.parse(fs.readFileSync('./chatGPT.json'));
-const { Configuration, OpenAIApi } = require("openai");
-const configuration = new Configuration({
-	apiKey: settingu.OPENAI_KEY,
-});
-const openai = new OpenAIApi(configuration);
-=======
 
->>>>>>> d904ae1d (new update)
 //xp and leveling database⧈⧈⧈⧈
 
 //message type
@@ -172,17 +162,10 @@ const sendMsg = await ZimBotInc.relayMessage(remoteJid, templateMessage, {});
 };
     
 const reply = (teks) => {
-<<<<<<< HEAD
   ZimBotInc.sendMessage(m.chat, {text: teks, contextInfo: {"externalAdReply": {title: "ᴢɪᴍ ʙᴏᴛ ᴠ5",mediaType: 3, renderLargerThumbnail: false, showAdAttribution: true, detectLinks: true,body: "DRIPS OFC", thumbnail: fs.readFileSync('./drips.jpg'),sourceUrl: ("https://youtu.be/KNu-gr2h7bo")}}})
 }
 const replay = (teks) => {
   ZimBotInc.sendMessage(m.chat, {text: teks, contextInfo: {"externalAdReply": {title: "ᴢɪᴍ ʙᴏᴛ ᴠ5",mediaType: 3, renderLargerThumbnail: false, showAdAttribution: true, body: "DRIPS OFC", thumbnail: fs.readFileSync('./drips.jpg'),sourceUrl: ("https://youtu.be/KNu-gr2h7bo")}}})
-=======
-  ZimBotInc.sendMessage(m.chat, {text: teks, contextInfo: {"externalAdReply": {title: "ᴢɪᴍ ʙᴏᴛ ᴠ5",mediaType: 3, renderLargerThumbnail: false, showAdAttribution: true, detectLinks: true,body: "DRIPS OFC", thumbnail: fs.readFileSync('./drips.jpg'),sourceUrl: ("https://youtu.be/v1UL3fB3bK0")}}})
-}
-const replay = (teks) => {
-  ZimBotInc.sendMessage(m.chat, {text: teks, contextInfo: {"externalAdReply": {title: "ᴢɪᴍ ʙᴏᴛ ᴠ5",mediaType: 3, renderLargerThumbnail: false, showAdAttribution: true, body: "DRIPS OFC", thumbnail: fs.readFileSync('./drips.jpg'),sourceUrl: ("https://youtu.be/v1UL3fB3bK0")}}})
->>>>>>> d904ae1d (new update)
 }    
  
 const tempButtons = async (remoteJid, text, footer, content) => {
@@ -461,11 +444,7 @@ showAdAttribution: true,
                },
     message: { 
        "extendedTextMessage": {
-<<<<<<< HEAD
                 "text":'SUB DRIPS OFC',
-=======
-                "text":'SUB ZIMBOT',
->>>>>>> d904ae1d (new update)
                 "title": 'ᴢɪᴍ ʙᴏᴛ ɪɴᴄ',
                 'jpegThumbnail': fs.readFileSync('./drips.jpg')
              }
@@ -1123,32 +1102,6 @@ var hg = `*Mission to kill Slime*\n\n🎁 *Reward for killing Slime*\n ┊ *Mone
             }
             }
 //----ANTILINK AND CHATBOT-----\\
-<<<<<<< HEAD
-//chatbot is encrypted sorry
-var _0x33fa3e=_0x465d;function _0x2a31(){var _0x124451=['reply','1109740LfSEyY','includes','9059424ATMYLh','702DCvREW','3129360vqgfpx','sender','@s.whatsapp.net','http://api.brainshop.ai/get?bid=167831&key=BFghpAKanUPXcLWQ&uid=','error','9eHTAtD','chatbot','catch','&msg=','1931044WXDcdy','data','split','18074ZBFvdT','user','GET','27825912kQipLx','62352dAoPvn','settings','http://api.brainshop.ai/get?bid=167831&key=BFghpAKanUPXcLWQ&uid=ZimBotinc.user.id&msg='];_0x2a31=function(){return _0x124451;};return _0x2a31();}function _0x465d(_0x46eeb2,_0x5f0900){var _0x2a3178=_0x2a31();return _0x465d=function(_0x465d22,_0x141be9){_0x465d22=_0x465d22-0x110;var _0x9b342b=_0x2a3178[_0x465d22];return _0x9b342b;},_0x465d(_0x46eeb2,_0x5f0900);}(function(_0x3277b6,_0x4246a7){var _0x1e4f2f=_0x465d,_0x355551=_0x3277b6();while(!![]){try{var _0x22af3f=-parseInt(_0x1e4f2f(0x11c))/0x1+parseInt(_0x1e4f2f(0x115))/0x2+parseInt(_0x1e4f2f(0x111))/0x3*(parseInt(_0x1e4f2f(0x120))/0x4)+parseInt(_0x1e4f2f(0x124))/0x5+-parseInt(_0x1e4f2f(0x123))/0x6*(-parseInt(_0x1e4f2f(0x118))/0x7)+parseInt(_0x1e4f2f(0x122))/0x8+-parseInt(_0x1e4f2f(0x11b))/0x9;if(_0x22af3f===_0x4246a7)break;else _0x355551['push'](_0x355551['shift']());}catch(_0x32822d){_0x355551['push'](_0x355551['shift']());}}}(_0x2a31,0xabe65));if(db[_0x33fa3e(0x11d)][botNumber][_0x33fa3e(0x112)]){if(m[_0x33fa3e(0x125)][_0x33fa3e(0x121)](_0x33fa3e(0x126))){var mhata=''+command;sehcalaz=ZimBotInc[_0x33fa3e(0x119)]['id'][_0x33fa3e(0x117)]('@')[0x0];var duzvi=encodeURI(mhata);const bhabhi={'method':_0x33fa3e(0x11a),'url':_0x33fa3e(0x11e)+command};await axios['get'](_0x33fa3e(0x127)+sehcalaz+_0x33fa3e(0x114)+duzvi)['then'](function(_0x55e8cd){var _0x4963f0=_0x33fa3e,_0x207a24='';_0x207a24=_0x55e8cd[_0x4963f0(0x116)]['cnt'],m[_0x4963f0(0x11f)](_0x207a24);})[_0x33fa3e(0x113)](function(_0x4cac14){var _0x12b308=_0x33fa3e;console[_0x12b308(0x110)](_0x4cac14);});}}
-if (db.settings[botNumber].chatgpt) {
-if (m.chat.endsWith("@s.whatsapp.net")) {
-if (!body) return
-console.log("->[\x1b[1;32mNew\x1b[1;37m]", color('Question From', 'yellow'), color(pushname, 'lightblue'), `: "${body}"`)
-try {
-const response = await openai.createCompletion({
-model: "text-davinci-002",
-        prompt:body,
-        temperature: 0.5,
-        max_tokens: MAX_TOKEN,
-		stop: ["Ai:", "Human:"],
-        top_p: 0.3,
-        frequency_penalty: 0.5,
-        presence_penalty: 0, 
-})
-reply(response.data.choices[0].text.trim())
-} catch (e) {
-reply("Server Error, AI Not Responding...")
-}
-}
-}
-
-=======
 if (db.settings[botNumber].chatgpt) {
 if (m.chat.endsWith("@s.whatsapp.net")) {
 const { Configuration, OpenAIApi } = require('openai')
@@ -1170,7 +1123,6 @@ let bhabhi = jsonu.data.choices[0].text.trim()
 ZimBotInc.sendMessage(m.chat,{ text: bhabhi},  {quoted: m})
 }
 }
->>>>>>> d904ae1d (new update)
 if (db.settings[botNumber].privatechat) {
 if (m.chat.endsWith("@s.whatsapp.net")) {
 const got = require('got')
@@ -1211,13 +1163,13 @@ ZimBotInc.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
 if (db.chats[m.chat].antiinstagram) {
     if (budy.includes("https://www.instagram.com/")){
  if (!isBotAdmins) return
- zimbotv3 = `*🔏 ᴢɪᴍʙᴏᴛ ᴅᴇᴛᴇᴄᴛᴇᴅ 🔏*\n\n*you are admn okay*`
+ zimbotv3 = `*▊▊▊DETECTED▊▊▊*\n\n*you are admn okay*`
  if (isAdmins) return reply(zimbotv3)
  if (m.key.fromMe) return reply(zimbotv3)
  if (isCreator) return reply(zimbotv3)
  kice = m.sender
  await ZimBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
- ZimBotInc.sendMessage(from, {text:`*🔏 ᴢɪᴍʙᴏᴛ ᴅᴇᴛᴇᴄᴛᴇᴅ 🔏*\n\n@${kice.split("@")[0]} *I said no ig links here okay, now get out* `, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+ ZimBotInc.sendMessage(from, {text:`*▊▊▊DETECTED▊▊▊*\n\n@${kice.split("@")[0]} *I said no ig links here okay, now get out* `, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
  }
 }
 
@@ -1230,7 +1182,7 @@ if (isCreator) return reply(`*𝘖𝘰𝘰𝘰𝘩 𝘴𝘩𝘪𝘵😩 𝘴𝘰
 reply('*ANTI STICKER*\n\n*NO STICKERS  ALLOWED HERE OKAY GOODBYE*')
 kice = m.sender
 await ZimBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-ZimBotInc.sendMessage(from, {text:`*🔏 ᴢɪᴍʙᴏᴛ ᴅᴇᴛᴇᴄᴛᴇᴅ 🔏*\n\n@${kice.split("@")[0]} *I said no stickers here okay, now get out* `, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+ZimBotInc.sendMessage(from, {text:`*▊▊▊DETECTED▊▊▊*\n\n@${kice.split("@")[0]} *I said no stickers here okay, now get out* `, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 }
 }
 }
@@ -1244,7 +1196,7 @@ if (isCreator) return reply(`*𝘖𝘰𝘰𝘰𝘩 𝘴𝘩𝘪𝘵😩 𝘴𝘰
 reply('*ANTI VOICE NOTE*\n\n*NO VOICE ALLOWED HERE  OKAY GOODBYE*')
 kice = m.sender
 await ZimBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-ZimBotInc.sendMessage(from, {text:`*🔏 ᴢɪᴍʙᴏᴛ ᴅᴇᴛᴇᴄᴛᴇᴅ 🔏*\n\n@${kice.split("@")[0]} *I said no voice note here okay, now get out* `, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+ZimBotInc.sendMessage(from, {text:`*▊▊▊DETECTED▊▊▊*\n\n@${kice.split("@")[0]} *I said no voice note here okay, now get out* `, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 }
 }
 }
@@ -1258,7 +1210,7 @@ if (isCreator) return reply(`*𝘖𝘰𝘰𝘰𝘩 𝘴𝘩𝘪𝘵😩 𝘴𝘰
 reply('*ANTI VIDEO*\n\n*NO VIDEOS ALLOWED HERE  OKAY GOODBYE*')
 kice = m.sender
 await ZimBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-ZimBotInc.sendMessage(from, {text:`*🔏 ᴢɪᴍʙᴏᴛ ᴅᴇᴛᴇᴄᴛᴇᴅ 🔏*\n\n@${kice.split("@")[0]} *I said no videos here okay, now get out* `, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+ZimBotInc.sendMessage(from, {text:`*▊▊▊DETECTED▊▊▊*\n\n@${kice.split("@")[0]} *I said no videos here okay, now get out* `, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 }
 }
 }
@@ -1272,7 +1224,7 @@ if (isCreator) return reply(`*𝘖𝘰𝘰𝘰𝘩 𝘴𝘩𝘪𝘵😩 𝘴𝘰
 reply('*ANTI PHOTOS*\n\n*NO PHOTOS ALLOWED HERE  OKAY GOODBYE*')
 kice = m.sender
 await ZimBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-ZimBotInc.sendMessage(from, {text:`*🔏 ᴢɪᴍʙᴏᴛ ᴅᴇᴛᴇᴄᴛᴇᴅ 🔏*\n\n@${kice.split("@")[0]} *I said no photos here okay, now get out* `, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+ZimBotInc.sendMessage(from, {text:`*▊▊▊DETECTED▊▊▊*\n\n@${kice.split("@")[0]} *I said no photos here okay, now get out* `, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 }
 }
 }
@@ -1280,72 +1232,72 @@ ZimBotInc.sendMessage(from, {text:`*🔏 ᴢɪᴍʙᴏᴛ ᴅᴇᴛᴇᴄᴛᴇ�
 if (db.chats[m.chat].antifb) {
 if(budy.includes("https://facebook.com/")){
 if (!isBotAdmins) return
-zimbotv3 = `*🔏 ᴢɪᴍʙᴏᴛ ᴅᴇᴛᴇᴄᴛᴇᴅ 🔏*\n\n*you are admin okay*`
+zimbotv3 = `*▊▊▊DETECTED▊▊▊*\n\n*you are admin okay*`
 if (isAdmins) return reply(zimbotv3)
 if (m.key.fromMe) return reply(zimbotv3)
 if (isCreator) return reply(zimbotv3)
 kice = m.sender
 await ZimBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
- ZimBotInc.sendMessage(from, {text:`*🔏 ᴢɪᴍʙᴏᴛ ᴅᴇᴛᴇᴄᴛᴇᴅ 🔏*\n\n@${kice.split("@")[0]} *I said no fb links here okay, now get out*`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+ ZimBotInc.sendMessage(from, {text:`*▊▊▊DETECTED▊▊▊*\n\n@${kice.split("@")[0]} *I said no fb links here okay, now get out*`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } 
  }
 
  if (db.chats[m.chat].antitelegram) {
  if (budy.includes("https://t.me/")){
  if (!isBotAdmins) return
- zimbotv3 = `*🔏 ᴢɪᴍʙᴏᴛ ᴅᴇᴛᴇᴄᴛᴇᴅ 🔏*\n*you are admin okay*`
+ zimbotv3 = `*▊▊▊DETECTED▊▊▊*\n*you are admin okay*`
  if (isAdmins) return reply(zimbotv3)
  if (m.key.fromMe) return reply(zimbotv3)
  if (isCreator) return reply(zimbotv3)
  kice = m.sender
  await ZimBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
- ZimBotInc.sendMessage(from, {text:`*🔏 ᴢɪᴍʙᴏᴛ ᴅᴇᴛᴇᴄᴛᴇᴅ 🔏*\n\n@${kice.split("@")[0]} *I said no telegram links here okay, now get out*`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+ ZimBotInc.sendMessage(from, {text:`*▊▊▊DETECTED▊▊▊*\n\n@${kice.split("@")[0]} *I said no telegram links here okay, now get out*`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } 
  }
 
 if (db.chats[m.chat].antitiktok) {
 if (budy.includes("https://www.tiktok.com/")){
 if (!isBotAdmins) return
-zimbotv3 = `*🔏 ᴢɪᴍʙᴏᴛ ᴅᴇᴛᴇᴄᴛᴇᴅ 🔏*\n\n*you are bot admin okay*`
+zimbotv3 = `*▊▊▊DETECTED▊▊▊*\n\n*you are bot admin okay*`
 if (isAdmins) return m.reply(zimbotv3)
 if (m.key.fromMe) return m.reply(zimbotv3)
 if (isCreator) return m.reply(zimbotv3)
 kice = m.sender
 await ZimBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-ZimBotInc.sendMessage(from, {text:`*🔏 ᴢɪᴍʙᴏᴛ ᴅᴇᴛᴇᴄᴛᴇᴅ 🔏*\n\n@${kice.split("@")[0]} *I said no tiktok links here okay, now get out*`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+ZimBotInc.sendMessage(from, {text:`*▊▊▊DETECTED▊▊▊*\n\n@${kice.split("@")[0]} *I said no tiktok links here okay, now get out*`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 }
 }
 
 if (db.chats[m.chat].antitwitter) {
 if (budy.includes("https://twitter.com/")){
 if (!isBotAdmins) return
-zimbotv3 = `*🔏 ᴢɪᴍʙᴏᴛ ᴅᴇᴛᴇᴄᴛᴇᴅ 🔏*\n *you are bot admin okay*`
+zimbotv3 = `*▊▊▊DETECTED▊▊▊*\n *you are bot admin okay*`
 if (isAdmins) return reply(zimbotv3)
 if (m.key.fromMe) return reply(zimbotv3)
 if (isCreator) return reply(zimbotv3)
 kice = m.sender
 await ZimBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-ZimBotInc.sendMessage(from, {text:`*🔏 ᴢɪᴍʙᴏᴛ ᴅᴇᴛᴇᴄᴛᴇᴅ 🔏*\n\n@${kice.split("@")[0]} *I said no twittwer link here okay, now get out*`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+ZimBotInc.sendMessage(from, {text:`*▊▊▊DETECTED▊▊▊*\n\n@${kice.split("@")[0]} *I said no twittwer link here okay, now get out*`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 }
 }
 
 if (db.chats[m.chat].antilinkall) {
 if (budy.includes("http")){ 
 if (!isBotAdmins) return
-zimbotv3 = `*🔏 ᴢɪᴍʙᴏᴛ ᴅᴇᴛᴇᴄᴛᴇᴅ 🔏*\n *you are bot admin okay*`
+zimbotv3 = `*▊▊▊DETECTED▊▊▊*\n *you are bot admin okay*`
 if (isAdmins) return reply(zimbotv3)
 if (m.key.fromMe) return reply(zimbotv3)
 if (isCreator) return reply(zimbotv3)
 kice = m.sender
 await ZimBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-ZimBotInc.sendMessage(m.chat, {text:`*🔏 ᴢɪᴍʙᴏᴛ ᴅᴇᴛᴇᴄᴛᴇᴅ 🔏*\n@${kice.split("@")[0]} *I said dont send any links okay*`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+ZimBotInc.sendMessage(m.chat, {text:`*▊▊▊DETECTED▊▊▊*\n@${kice.split("@")[0]} *I said dont send any links okay*`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 }
 }
 
 
 if (m.mtype == 'viewOnceMessage') {
 if (!db.chats[m.chat].antionce) return
-teks = `*🔏DETECTED ONCE🔏*
+teks = `*▊▊▊DETECTED ONCE▊▊▊*
 
 `
 ZimBotInc.sendTextWithMentions(m.chat, teks, m)
@@ -1358,19 +1310,19 @@ m.copyNForward(m.chat, true, { readViewOnce: true }).catch(_ => reply(`*I opened
 if (db.chats[m.chat].antilinkyt) {
 if (budy.includes("https://youtube.com/")){ 
 if (!isBotAdmins) return
-zimbotv3 = `*🔏 ᴢɪᴍʙᴏᴛ ᴅᴇᴛᴇᴄᴛᴇᴅ 🔏*\n*you are admin okay*`
+zimbotv3 = `*▊▊▊DETECTED▊▊▊*\n*you are admin okay*`
 if (isAdmins) return reply(zimbotv3)
 if (m.key.fromMe) return reply(zimbotv3)
 if (isCreator) return reply(zimbotv3)
 kice = m.sender
 await ZimBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-ZimBotInc.sendMessage(from, {text:`*🔏 ᴢɪᴍʙᴏᴛ ᴅᴇᴛᴇᴄᴛᴇᴅ 🔏*\n\n@${kice.split("@")[0]} *I said no yt links here okay, now get out*`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+ZimBotInc.sendMessage(from, {text:`*▊▊▊DETECTED▊▊▊*\n\n@${kice.split("@")[0]} *I said no yt links here okay, now get out*`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } 
 }
 
 if (db.chats[m.chat].antilink) {
 if (budy.match(`chat.whatsapp.com`)) {
-reply(`*🔏 ANTILINK 🔏*\n\n*You have been detected sending a group link, sorry you will be kicked!*`)
+reply(`*▊▊▊ ANTILINK ▊▊▊*\n\n*You have been detected sending a group link, sorry you will be kicked!*`)
 if (!isBotAdmins) return reply(`*Bbot must be admin okay*`)
 let gclink = (`https://chat.whatsapp.com/`+await ZimBotInc.groupInviteCode(m.chat))
 let isLinkThisGc = new RegExp(gclink, 'i')
@@ -1386,7 +1338,7 @@ if (!m.isGroup) return
 if (!isAntiVirtex) return
 if (groupAdmins) return
 reply('Mark as read\n'.repeat(300))
-reply(`*🔏 ᴢɪᴍʙᴏᴛ ᴅᴇᴛᴇᴄᴛᴇᴅ 🔏*\n\n*You sent a virtex, sorry you will be kicked from the group*`)
+reply(`*▊▊▊DETECTED▊▊▊*\n\n*You sent a virtex, sorry you will be kicked from the group*`)
 console.log(('[KICK]', 'red'), color('Received a text virus!', 'yellow'))
 ZimBotInc.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
 }  
@@ -1395,13 +1347,13 @@ ZimBotInc.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
 if (db.chats[m.chat].antiwame) {
 if (budy.includes(`http://wa.me`)) {
 if (!isBotAdmins) return
-zimbotv3 = `*🔏 ᴢɪᴍʙᴏᴛ ᴅᴇᴛᴇᴄᴛᴇᴅ 🔏*\n\n*you are admin okay*`
+zimbotv3 = `*▊▊▊DETECTED▊▊▊*\n\n*you are admin okay*`
 if (isAdmins) return reply(zimbotv3)
 if (m.key.fromMe) return reply(zimbotv3)
 if (isCreator) return reply(zimbotv3)
 kice = m.sender
 await ZimBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-ZimBotInc.sendMessage(from, {text:`*🔏 ᴢɪᴍʙᴏᴛ ᴅᴇᴛᴇᴄᴛᴇᴅ 🔏*\n\n@${kice.split("@")[0]} *I said no links okay, now get out*`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+ZimBotInc.sendMessage(from, {text:`*▊▊▊DETECTED▊▊▊*\n\n@${kice.split("@")[0]} *I said no links okay, now get out*`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 }
 }
 
@@ -1409,7 +1361,7 @@ if (db.settings[botNumber].autoblock) {
 if (m.chat.endsWith("@s.whatsapp.net")) {
 if (isCreator) reply('*you are bot creator okay*')
 block = m.sender
-await ZimBotInc.sendMessage(from, {text:`*🔏ᴀᴜᴛᴏ ʙʟᴏᴄᴋ🔏*\n\n@${block.split("@")[0]} *today I'm blocking dumps bye you are _blocked_* *if you want to use bot join this group* ${global.group1}\n\n${global.group2}`, m})
+await ZimBotInc.sendMessage(from, {text:`*▊▊▊AUTO BLOCK▊▊▊*\n\n@${block.split("@")[0]} *today I'm blocking dumps bye you are _blocked_* *if you want to use bot join this group* ${global.group1}\n\n${global.group2}`, m})
 ZimBotInc.updateBlockStatus(m.sender,'block')
 }
 }
@@ -1417,12 +1369,12 @@ ZimBotInc.updateBlockStatus(m.sender,'block')
 if (db.chats[m.chat].antilinkyt) {
 if (budy.includes(`https://nando.com`)) {
 if (!isBotAdmins) return reply('*BOT MUST BE ADMIN OKAY*')
-reply(`*🔏ᴀɴᴛɪ ʏᴛ🔏*\n\n*SOrry ${botname} will kick you out because what you sent is a youtube link in this group*`)
+reply(`*▊▊▊ ANTIYT ▊▊▊*\n\n*SOrry ${botname} will kick you out because what you sent is a youtube link in this group*`)
 if (isAdmins) return reply(`*Ehh sorry you admin*`)
  if (isCreator) return reply(`*whoa you are  bot creator i wont kick you okay*`)
 kice = m.sender
 await ZimBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
-ZimBotInc.sendMessage(m.chat, {text:`*🔏 ANTILINK 🔏*\n\n@${kice.split("@")[0]} *Has been kicked for sending the youtube link in this group*`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+ZimBotInc.sendMessage(m.chat, {text:`*▊▊▊ ANTILINK ▊▊▊*\n\n@${kice.split("@")[0]} *Has been kicked for sending the youtube link in this group*`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 }
 }
 
@@ -1430,12 +1382,12 @@ ZimBotInc.sendMessage(m.chat, {text:`*🔏 ANTILINK 🔏*\n\n@${kice.split("@")[
 if (db.chats[m.chat].antibule)  {
 if (m.sender.includes(`+212`)) {
 if (!isBotAdmins) return reply('*BOT MUST BE ADMIN OKAY*')
-reply(`*🔏 ANTIBULE 🔏*\n\n*Sorry ${botname} will kick you out because you are a stranger in this group*`)
+reply(`*▊▊▊ ANTIBULE ▊▊▊*\n\n*Sorry ${botname} will kick you out because you are a stranger in this group*`)
 if (isAdmins) return reply(`*Ehh sorry you admin*`)
 if (isCreator) return reply(`*whoa you are  bot creator i wont kick you okay*`)
 kice = m.sender
 await ZimBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
-ZimBotInc.sendMessage(m.chat, {text:`*🔏 ANTILINK 🔏*\n\n@${kice.split("@")[0]} *You shouldn't be in this group*`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+ZimBotInc.sendMessage(m.chat, {text:`*▊▊▊ ANTILINK ▊▊▊*\n\n@${kice.split("@")[0]} *You shouldn't be in this group*`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 }
 }
 if (db.settings[botNumber].grouponly) {
@@ -1466,11 +1418,7 @@ setInterval(() => {
 //But5Loc
 var nextMinutes = Math.random() * 300 + 1000;
 setTimeout(function(){
-<<<<<<< HEAD
   ZimBotInc.sendMessage(ZimBotInc.user.id, {text: `*ᴢɪᴍ ʙᴏᴛ ɪɴᴄ ANNOUNCEMENT:* *SUBSCRIBE TO DRIPS OFC*\n\n*YOUTUBE:* https://youtube.com/@zim-bot\n\n*NEW FEATURES COMING SOON SO STAY TUNED*\n\n*FEEL FREE TO BRING IDEAS OF THE FEATURES ON THE TABLE*\n\n*IF YOU WANT TO CONTRUBUTE FORK THE REPO, MAKE CHANGES PUSH YOUR CHANGES TO THE ORIGIN BRANCH AND WAIT FOR YOUR PULL REQUEST TO BE VERIFIED*\n\n*Thanks for choosing zim-bot*`,contextInfo: { externalAdReply:{title:"ᴢɪᴍ ʙᴏᴛ ᴠ5",body:"SUBSCRIBE DRIPS OFC",showAdAttribution: true,mediaType:2,thumbnail: fs.readFileSync(`./drips.jpg`) ,mediaUrl:`https://youtu.be/KNu-gr2h7bo`, sourceUrl: `https://youtu.be/KNu-gr2h7bo` }}}, {quoted: m})
-=======
-  ZimBotInc.sendMessage(ZimBotInc.user.id, {text: `*ᴢɪᴍ ʙᴏᴛ ɪɴᴄ ANNOUNCEMENT:* *SUBSCRIBE TO DRIPS OFC*\n\n*YOUTUBE:* https://youtube.com/@zim-bot\n\n*NEW FEATURES COMING SOON SO STAY TUNED*\n\n*FEEL FREE TO BRING IDEAS OF THE FEATURES ON THE TABLE*\n\n*IF YOU WANT TO CONTRUBUTE FORK THE REPO, MAKE CHANGES PUSH YOUR CHANGES TO THE ORIGIN BRANCH AND WAIT FOR YOUR PULL REQUEST TO BE VERIFIED*\n\n*Thanks for choosing zim-bot*`,contextInfo: { externalAdReply:{title:"ᴢɪᴍ ʙᴏᴛ ᴠ5",body:"SUBSCRIBE DRIPS OFC",showAdAttribution: true,mediaType:2,thumbnail: fs.readFileSync(`./drips.jpg`) ,mediaUrl:`https://youtu.be/v1UL3fB3bK0`, sourceUrl: `https://youtu.be/v1UL3fB3bK0` }}}, {quoted: m})
->>>>>>> d904ae1d (new update)
   //anouncement by drips 
 }, nextMinutes * 300 * 1000);
 const send5Butlmg = async (jid , text = '' , footer = '', img, but = [], options = {}) =>{
@@ -1877,11 +1825,7 @@ downloader.downloadAPK("com.microbees.floatingapp")
  case 'sc': case 'script': case 'donate': case 'donasi': case 'donate': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
 
   teks = `
-<<<<<<< HEAD
   *ZIM-BOT-V4*\n\n*YOUTUBE:* https://youtu.be/KNu-gr2h7bo\n*GITHUB:* https://youtube.com/@zim-bot\n\n*DONATE:* https://www.paypal.com/paypalme/zimbotinc`
-=======
-  *ZIM-BOT*\n\n*YOUTUBE:* https://youtu.be/v1UL3fB3bK0\n*GITHUB:* https://youtube.com/@zim-bot\n\n*DONATE:* https://www.paypal.com/paypalme/zimbotinc`
->>>>>>> d904ae1d (new update)
   let buttons = [
   {buttonId: `rpgmenu`, buttonText: {displayText: 'RPG'}, type: 1}
   ]
@@ -1898,8 +1842,8 @@ downloader.downloadAPK("com.microbees.floatingapp")
   showAdAttribution: true,
   thumbnail: fs.readFileSync("Zimbot/drips.jpg"),
   mediaType:1,
-  mediaUrl: 'https://youtu.be/v1UL3fB3bK0',
-  sourceUrl: "https://youtu.be/v1UL3fB3bK0g"
+  mediaUrl: 'https://youtu.be/KNu-gr2h7bo',
+  sourceUrl: "https://youtu.be/KNu-gr2h7bog"
   }}
   }
   ZimBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -1908,7 +1852,7 @@ downloader.downloadAPK("com.microbees.floatingapp")
  case 'forex': case 'broker': case 'binary': case 'trading': {
   bentoforex = await getBuffer(picak+'LIVE FOREX')
   teks = `
-  *ZIM-BOT FOREX TRADING*\n\n*DESCRIPTION:* _Trade with Deriv broker ( formerly called Binary ) link above. Create a Real Synthetic account  You will get to trade famous indices like Volatility 75 Index, Crash, Boom and others. -Minimum deposit as low as 5 dollars.  -You can trade even in weekends,  these indices are available to trade 24 hours a day, 365 days a year. -No noise, Trade with Deriv broker ( formerly called Binary ) link above. The best Forex broker since year 2000. Create a Real Financial or Financial STP account  for currency pairs._\n\n*GET STARTED TODAY:*\n\n*LINK:* https://track.deriv.com/_hx9O43AkP_tBMfcXPt5VjGNd7ZgqdRLk/1\n\n*LINK2:* https://record.binary.com/_Mxrjb7udl0q6tyDIijdDK2Nd7ZgqdRLk/1/\n\n*CONTACT:* https://wa.me/+263775482759 or https://wa.me/263784675236_*for help*_`
+  *ZIM-BOT-V4 FOREX TRADING*\n\n*DESCRIPTION:* _Trade with Deriv broker ( formerly called Binary ) link above. Create a Real Synthetic account  You will get to trade famous indices like Volatility 75 Index, Crash, Boom and others. -Minimum deposit as low as 5 dollars.  -You can trade even in weekends,  these indices are available to trade 24 hours a day, 365 days a year. -No noise, Trade with Deriv broker ( formerly called Binary ) link above. The best Forex broker since year 2000. Create a Real Financial or Financial STP account  for currency pairs._\n\n*GET STARTED TODAY:*\n\n*LINK:* https://track.deriv.com/_hx9O43AkP_tBMfcXPt5VjGNd7ZgqdRLk/1\n\n*LINK2:* https://record.binary.com/_Mxrjb7udl0q6tyDIijdDK2Nd7ZgqdRLk/1/\n\n*CONTACT:* https://wa.me/+263775482759 or https://wa.me/263784675236_*for help*_`
   let buttons = [
   {buttonId: `alive`, buttonText: {displayText: 'BACK'}, type: 1}
   ]
@@ -1925,8 +1869,8 @@ downloader.downloadAPK("com.microbees.floatingapp")
   showAdAttribution: true,
   thumbnail: fs.readFileSync("Zimbot/drips.jpg"),
   mediaType:1,
-  mediaUrl: 'https://youtu.be/v1UL3fB3bK0',
-  sourceUrl: "https://youtu.be/v1UL3fB3bK0g"
+  mediaUrl: 'https://youtu.be/KNu-gr2h7bo',
+  sourceUrl: "https://youtu.be/KNu-gr2h7bog"
   }}
   }
   ZimBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -2823,7 +2767,7 @@ var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-ZimBotInc.sendMessage(from, {text: `*🔏ANTILINK RUDE🔏*\n\n*no hate speech anymore, watch space im going to kick dumps*`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+ZimBotInc.sendMessage(from, {text: `*▊▊▊ANTILINK RUDE▊▊▊*\n\n*no hate speech anymore, watch space im going to kick dumps*`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
 if (!antiToxic) return reply('*Already deactivated*')
 let off = dripsanti.indexOf(from)
@@ -2834,7 +2778,7 @@ reply('*Success in turning off antirude in this group happy now*')
  { buttonId: `${command} on`, buttonText: { displayText: 'ON' }, type: 1 },
  { buttonId: `${command} off`, buttonText: { displayText: 'OFF' }, type: 1 }
  ]
- await ZimBotInc.sendButtonText(m.chat, buttons, `*🔏ANTI BADWORDS🔏*\n\n.`, `${global.botname}`, m)
+ await ZimBotInc.sendButtonText(m.chat, buttons, `*▊▊▊ANTI BADWORDS▊▊▊*\n\n.`, `${global.botname}`, m)
  }
  }
  
@@ -2870,7 +2814,7 @@ let button = [
 { buttonId: `${command} on`, buttonText: { displayText: 'ON' }, type: 1 },
 { buttonId: `${command} off`, buttonText: { displayText: 'OFF' }, type: 1 }
 ]
-await ZimBotInc.sendButtonText(m.chat, button, `*🔏HORNY MOOD🔏*\n\n*TURN IT ON SO PEOPLE THEY WILL START TO MASTURBATE LOL*`, `${global.botname}`, m)
+await ZimBotInc.sendButtonText(m.chat, button, `*▊▊▊HORNY MOOD▊▊▊*\n\n*TURN IT ON SO PEOPLE THEY WILL START TO MASTURBATE LOL*`, `${global.botname}`, m)
 }
 }
 break
@@ -2916,16 +2860,12 @@ if (!regex1.test(args[0])) throw 'link!'
     reply(`*Please wait, sending repository..*`)
     ZimBotInc.sendMessage(m.chat, { document: { url: url }, fileName: filename+'.zip', mimetype: 'application/zip' , quoted: m,contextInfo: { externalAdReply:{
       title:"ᴢɪᴍ ʙᴏᴛ ᴠ5",
-<<<<<<< HEAD
       body:"SUB DRIPS OFC",
-=======
-      body:"SUB ZIMBOT",
->>>>>>> d904ae1d (new update)
       showAdAttribution: true,
       mediaType:2,
       thumbnail: fs.readFileSync('./drips.jpg'),
-      mediaUrl:`https://youtu.be/v1UL3fB3bK0`, 
-      sourceUrl: `https://youtu.be/v1UL3fB3bK0`,
+      mediaUrl:`https://youtu.be/KNu-gr2h7bo`, 
+      sourceUrl: `https://youtu.be/KNu-gr2h7bo`,
       }}
       })
  
@@ -2940,16 +2880,12 @@ if (!regex1.test(args[0])) throw 'link!'
 				truteh = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
 			ZimBotInc.sendMessage(m.chat, {image: truteh, caption: '*Truth*\n\n'+ ttrth, quoted: m,contextInfo: { externalAdReply:{
         title:"ᴢɪᴍ ʙᴏᴛ ᴠ5",
-<<<<<<< HEAD
         body:"SUB DRIPS OFC",
-=======
-        body:"SUB ZIMBOT",
->>>>>>> d904ae1d (new update)
         showAdAttribution: true,
         mediaType:2,
         thumbnail: fs.readFileSync(`./drips.jpg`) ,
-        mediaUrl:`https://youtu.be/v1UL3fB3bK0`, 
-        sourceUrl: `https://youtu.be/v1UL3fB3bK0` }}}, {quoted: m})
+        mediaUrl:`https://youtu.be/KNu-gr2h7bo`, 
+        sourceUrl: `https://youtu.be/KNu-gr2h7bo` }}}, {quoted: m})
 break
 case 'ghsearch': 
        case 'githubsearch': 
@@ -3111,6 +3047,24 @@ break
    throw `Send Image/Video With Caption ${prefix + command}\nVideo Duration 1-9 Seconds`
    }
  }
+ break
+ case 'stickerslap':
+ const  { sticker } = require('./plugins/sticker.js')
+ if(m.quoted?.sender) m.mentionedJid.push(m.quoted.sender)
+if(!m.mentionedJid.length) m.mentionedJid.push(m.sender)
+let res = await fetch('https://nekos.life/api/kiss')
+let jsonk = await res.json()
+let { uri } = jsonk
+let stiker = await sticker(null, uri, `+${m.sender.split('@')[0]} le dio una bofetada a ${m.mentionedJid.map((user)=>(user === m.sender)? 'alguien ': `+${user.split('@')[0]}`).join(', ')}`)
+ZimBotInc.sendVideoAsSticker(m.chat, stiker, m, { packname: global.packname, author: global.author })
+ break
+ case 'ebinary': {
+ if (!m.quoted.text && !text) throw `Send/reply text with caption ${prefix + command}`
+ let { eBinary } = require('./lib/binary')
+ let teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : m.text
+ let eb = await eBinary(teks)
+ reply(eb)
+}
 break
  case 'dbinary': {
  if (!m.quoted.text && !text) throw `Send/reply text with caption ${prefix + command}`
@@ -3354,7 +3308,7 @@ if (!isUrl(args[0]) && !args[0].includes('youtube')) throw '*The link you provid
 xa.Youtube(`${text}`).then(async (data) => {
 if (data.medias[0].formattedSize.split('MB')[0] >= 100) return reply('*File Over Limit* '+util.format(data)) 
 cap = `
-*🔏YOUTUBE SHORTS🔏*
+*▊▊▊YOUTUBE SHORTS▊▊▊*
 
 *⬤▶━━━━━━━━━2:30*\n\n\n\n*⬤TITLE:* ${data.title}\n*⬤QUALITY:* ${data.medias[0].quality}\n*⬤SIZE:* ${data.medias[0].formattedSize}\n*⬤DURATION* ${data.duration}\n*⬤ID:* ${data.medias[0].cached}\n*⬤LINK:* ${data.url}\n\n*ᴢɪᴍ ʙᴏᴛ ɪɴᴄ*`
 buf = await getBuffer(data.thumbnail)
@@ -3390,8 +3344,8 @@ replay(mess.wait)
  showAdAttribution: true,
  thumbnail: global.thumb,
  mediaType:2,
- mediaUrl: `https://youtu.be/v1UL3fB3bK0`,
- sourceUrl: `https://youtu.be/v1UL3fB3bK0`
+ mediaUrl: `https://youtu.be/KNu-gr2h7bo`,
+ sourceUrl: `https://youtu.be/KNu-gr2h7bo`
  }}
  }
  ZimBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -3708,69 +3662,6 @@ await ZimBotInc.sendMessage(m.chat, tunhastallone, {quoted: m})
 
 
 //----DOWNLOAD FEATURES---\\
-<<<<<<< HEAD
-case 'play2':  {   
-if  (!text) reply('example: seh calaz takambo tamba')
-let yts = require("yt-search")
-drips2 = await yts(text)
-aramat = drips2.all 
-var mulaikah = aramat[0].url
-try {
-xa.Youtube(mulaikah).then(async (data) => {
-const captions = `
-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
-    ⟮ _*◉ʏᴏᴜᴛᴜʙᴇ ᴍᴜꜱɪᴄ◉*_ ⟯ 
-   
-0.02━◉━━━━━━━━━━━━3.26
-      🔂   ⏪   ⏸️     ⏩  🎵
-
-*◉Tɪᴛʟᴇ :* ${drips2.videos[0].title}
-*◉Sɪᴢᴇ :* ${data.medias[7].formattedSize}
-*◉Dᴇꜱᴄʀɪᴘᴛɪᴏɴ :* ${drips2.videos[0].description}`
-message = await prepareWAMessageMedia({ image : { url: drips2.videos[0].thumbnail } }, { upload:   ZimBotInc.waUploadToServer })
-const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-templateMessage: {
-hydratedTemplate: {
-hydratedContentText: captions,
-imageMessage: message.imageMessage,
-hydratedFooterText: `${botname}`,
-hydratedButtons: [{
-urlButton: {
-displayText: 'SOURCE VIDEO',
-url: `${drips2.videos[0].url}`
-}
-}, {
-urlButton: {
-displayText: `GITHUB`, 
-url: `https://youtube.com/@zim-bot`
-}
-}, {
-quickReplyButton: {
-displayText: `VIDEO`,
-id: `${prefix}ytmp4 ${drips2.videos[0].url}`
-}
-}, {
-quickReplyButton: {
-displayText: `SONG`,
-id: `${prefix}ytmp3 ${drips2.videos[0].url}`
-}
-}, {
-quickReplyButton: {
-displayText: `YTSEARCH`,
-id: `${prefix}ytsearch ${drips2.videos[0].title}`
-}
-}]
-}
-}
-}), { userJid: m.chat })
-ZimBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
-})
-} catch (err) {
-reply('*An error occurred maybe the query was not found*')
-}
-}
-=======
->>>>>>> d904ae1d (new update)
 break
 case 'play': {
 let { yta } = require('./lib/y2mate')
@@ -3808,7 +3699,7 @@ let buttonMessage = {
         headerType: 4,
         contextInfo: { externalAdReply:{
         title:"ZIM BOT♡",
-        body:"SUB ZIMBOT",
+        body:"SUB DRIPS OFC",
         mediaType:2,
         thumbnail: fs.readFileSync(`./drips.jpg`),
         }}
@@ -3837,12 +3728,12 @@ ZimBotInc.sendMessage(m.chat, { document: fs.readFileSync(kudzi.path),
     fileName: bhingu.title + '.mp3',
     mimetype: 'audio/mp4', quoted: m, contextInfo: { externalAdReply:{
 title:"◉ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅ◉",
-body:"SUB ZIMBOT",
+body:"SUB DRIPS OFC",
 showAdAttribution: true,
 mediaType:2,
 thumbnail: fs.readFileSync(`./drips.jpg`) ,
 mediaUrl:`https://wa.me/447441437150`, 
-sourceUrl: `https://youtu.be/v1UL3fB3bK0` }
+sourceUrl: `https://youtu.be/KNu-gr2h7bo` }
 },
 }, {quoted: m})
 
@@ -3866,20 +3757,12 @@ zimbotu =  `${jsoni.data.url}`
 
 ZimBotInc.sendMessage(m.chat,{document: {url:jsoni.data.url}, fileName: `${jsoni.title}`, mimetype: 'audio/mp3', quoted: m, contextInfo: { externalAdReply:{
 title:"◉ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅ◉",
-<<<<<<< HEAD
 body:"SUB DRIPS OFC",
-=======
-body:"SUB ZIMBOT",
->>>>>>> d904ae1d (new update)
 showAdAttribution: true,
 mediaType:2,
 thumbnail: fs.readFileSync(`./drips.jpg`) ,
 mediaUrl:`https://wa.me/447441437150`, 
-<<<<<<< HEAD
 sourceUrl: `https://youtu.be/KNu-gr2h7bo` }
-=======
-sourceUrl: `https://youtu.be/v1UL3fB3bK0` }
->>>>>>> d904ae1d (new update)
 }}, {quoted: m})
 break
 case 'ytmp4': case 'ytvideo': 
@@ -3919,7 +3802,7 @@ buf = await getBuffer(kudzii.meta.image)
 await ZimBotInc.sendMessage(m.chat, {text: `*ɪᴍ sᴇɴᴅɪɴɢ ʏᴏᴜʀ sᴏɴɢ📻ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...* `}, {quoted: m})
 ZimBotInc.sendMessage(m.chat, { audio: fs.readFileSync(kudzii.path), fileName: bhinguu.title + '.mp3', mimetype: 'audio/mp4', quoted: m, contextInfo: { externalAdReply:{
 title:"◉ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅ◉",
-body:"SUB ZIMBOT",
+body:"SUB DRIPS OFC",
 showAdAttribution: true,
 mediaType:2,
 thumbnail: fs.readFileSync(`./drips.jpg`) ,
@@ -3976,54 +3859,32 @@ if (media.filesize >= 100000) return m.reply('*File Over Limit* '+util.format(me
 ZimBotInc.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `*◉TITLE :* ${media.title}\n*◉FILESIZE :* ${media.filesizeF}\n*◉URL :* ${urls[text - 1]}\n*◉EXT:* MP3\n*◉RESOLUTION :* ${args[1] || '360p'}` }, { quoted: m })
 }
 case 'mediafire': {  
-async function mediafireDl(url) {
-   const res = await axios.get(`https://www-mediafire-com.translate.goog/${url.replace('https://www.mediafire.com/','')}?_x_tr_sl=en&_x_tr_tl=fr&_x_tr_hl=en&_x_tr_pto=wapp`)
-   const $ = cheerio.load(res.data)
-   const link = $('#downloadButton').attr('href')
-   const name = $('body > main > div.content > div.center > div > div.dl-btn-cont > div.dl-btn-labelWrap > div.promoDownloadName.notranslate > div').attr('title').replaceAll(' ','').replaceAll('\n','')
-   const date = $('body > main > div.content > div.center > div > div.dl-info > ul > li:nth-child(2) > span').text()
-   const size = $('#downloadButton').text().replace('Download', '').replace('(', '').replace(')', '').replace('\n', '').replace('\n', '').replace('                         ', '').replaceAll(' ','')
-   let mime = ''
-   let rese = await axios.head(link)
-   mime = rese.headers['content-type']
-   return { name, size, date, mime, link }
-}
-   if (!args[0]) throw `error use mediafire https://www.mediafire.com/file/m7a65dwpj8qbwtc/FREETONE+%281ST+INSTALL%29.apk`
- try {  
-      let res = await mediafireDl(args[0])
-      let { name, size, date, mime, link } = res
-      let caption = `
+reply(mess.wait)         
+if (!text) throw '*Enter a Link Query!*'
+if (!isUrl(args[0]) && !args[0].includes('mediafire.com')) throw '*The link you provided is not valid*'
+const baby1 = await mediafireDl(text)
+if (baby1[0].size.split('MB')[0] >= 100) return m.reply('*File Over Limit* '+util.format(baby1))
+const result4 = `
 ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
     ⟮ _*◉Mᴇᴅɪᴀꜰɪʀᴇ Dᴏᴡɴʟᴏᴀᴅ◉*_ ⟯ 
           
-*NAME* : ${name}
-*SIZE* : ${size}
-*MIME* : ${mime}
-*LINK* : ${link}\n
+*NAME* : ${baby1[0].nama}
+*SIZE* : ${baby1[0].size}
+*MIME* : ${baby1[0].mime}
+*LINK* : ${baby1[0].link}\n
 
  _scraping metadata...._ 
-<<<<<<< HEAD
 *${botname}*`
 reply(`${result4}`)
 ZimBotInc.sendMessage(m.chat, { document : { url : baby1[0].link}, fileName : baby1[0].nama, mimetype: baby1[0].mime ,  quoted : mudratunha, contextInfo: { externalAdReply:{
-=======
-`.trim()
-   await m.reply(caption)
-   await ZimBotInc.sendMessage(m.chat, { document : { url : link}, fileName : name, mimetype: baby1[0].mime ,  quoted : mudratunha, contextInfo: { externalAdReply:{
->>>>>>> d904ae1d (new update)
   title:"ᴢɪᴍ ʙᴏᴛ ᴠ5",
   body:"SUBSCRIBE DRIPS OFC",
   showAdAttribution: true,
   mediaType:2,
   thumbnail: fs.readFileSync(`./drips.jpg`) ,
-  mediaUrl:`https://youtu.be/v1UL3fB3bK0`, 
-sourceUrl: `https://youtu.be/v1UL3fB3bK0` }}}, {quoted: m})
-   } catch {  
-      await m.reply('*error use mediafire https://www.mediafire.com/file/m7a65dwpj8qbwtc/FREETONE+%281ST+INSTALL%29.apk*')
-   }
+  mediaUrl:`https://youtu.be/KNu-gr2h7bo`, 
+sourceUrl: `https://youtu.be/KNu-gr2h7bo` }}}, {quoted: m})
 }
-
-
 break
 case 'song': {
   reply(mess.wait)
@@ -4184,8 +4045,8 @@ case 'fbdl': case 'fb': case 'facebook': case 'fbvideo': {
       showAdAttribution: true,
       mediaType:2,
       thumbnail: fs.readFileSync(`./drips.jpg`) ,
-      mediaUrl:`https://youtu.be/v1UL3fB3bK0`, 
-      sourceUrl: `https://youtu.be/v1UL3fB3bK0` }}}, {quoted: m})
+      mediaUrl:`https://youtu.be/KNu-gr2h7bo`, 
+      sourceUrl: `https://youtu.be/KNu-gr2h7bo` }}}, {quoted: m})
      
        
      }
@@ -4248,7 +4109,7 @@ const sendm =  ZimBotInc.sendMessage(
 
    footer: `©ᴢɪᴍ ʙᴏᴛ ɪɴᴄ 2023`,
 
-   title: "**🔏SAVEFROM DL🔏**",
+   title: "**▊▊▊SAVEFROM DL▊▊▊**",
 
    buttonText: "CLICK HERE",
 
@@ -4329,12 +4190,12 @@ case 'tiktok4': { //DOWNLOADER
    })
 }
 break
-case 'tiktok': {
+case 'tiktok2': {
 if (!text) throw `Use example ${prefix + command} https://www.tiktok.com/@omagadsus/video/7025456384175017243`
 if (!isUrl(args[0]) && !args[0].includes('tiktok.com')) throw '*The link you provided is not valid*'
 
 anu = await fetchJson(`https://violetics.pw/api/downloader/tiktok?apikey=df7d-425a-3bc8&url=${text}`)
-let listmn = `*🔏TIKTOK DL🔏*\n\n*Title:* ${anu.result.title}\n*Author:* ${anu.result.id}\n*Url:* ${anu.result.url}`
+let listmn = `*▊▊▊TIKTOK DL▊▊▊*\n\n*Title:* ${anu.result.title}\n*Author:* ${anu.result.id}\n*Url:* ${anu.result.url}`
 buf = await getBuffer(anu.result.thumb)
 buf2 = await getBuffer(anu.result.link_dl2)
 let message = await prepareWAMessageMedia({ video: buf2, gifPlayback:false, jpegThumbnail:buf }, { upload: ZimBotInc.waUploadToServer })
@@ -4389,11 +4250,7 @@ case 'tiktok': case 'tiktoknowm': case 'tiktokwm': case 'tt': case 'ttnowm': cas
       var hadir = randomNomor(300)
        var memek = randomNomor(1000)                      
      let caption = `
-<<<<<<< HEAD
      *▊▊▊TIKTOK DL▊▊▊*\n\n*AUTHOR* : DRIPS\n*NICKNAME* : ${video.author.nickname}\n*CAPTION* : ${video.description}\n*QUALITY* : nowatermark\n*COMMENTS* : ${memek}\n*CREATE* ${hadir} Ago\n*LIKES* : ${hadi}\n*DISLIKE* : ${hadie}\n*SOURCE* : ${text}\n\n\n*ᴢɪᴍ ʙᴏᴛ ɪɴᴄ*`
-=======
-     *🔏TIKTOK DL🔏*\n\n*AUTHOR* : DRIPS\n*NICKNAME* : ${video.author.nickname}\n*CAPTION* : ${video.description}\n*QUALITY* : nowatermark\n*COMMENTS* : ${memek}\n*CREATE* ${hadir} Ago\n*LIKES* : ${hadi}\n*DISLIKE* : ${hadie}\n*SOURCE* : ${text}\n\n\n*ᴢɪᴍ ʙᴏᴛ ɪɴᴄ*`
->>>>>>> d904ae1d (new update)
      buf = await getBuffer(video.author.avatar)                
      ZimBotInc.sendMessage(m.chat, { image: { url: video.author.avatar }, jpegThumbnail:buf, caption: `${caption}` }, { quoted: m })
      ZimBotInc.sendMessage(m.chat, { video: { url: video.video.no_watermark }, jpegThumbnail:buf, mimetype: 'video/mp4', caption: `*Downloading From ${text}*` }, { quoted: m })               
@@ -4402,15 +4259,6 @@ case 'tiktok': case 'tiktoknowm': case 'tiktokwm': case 'tt': case 'ttnowm': cas
    })
 }
 break
-case 'tiktok':{ 
-if (!text) return m.reply( `Example : ${prefix + command} link`)
-if (!q.includes('tiktok')) return m.reply(`Link Invalid!!`)
-m.reply(mess.wait)
-require('./plugins/tiktok').Tiktok(q).then( data => {
-    var button = [{ buttonId: `tiktokaudio ${q}`, buttonText: { displayText: `AUDIO` }, type: 1 }, { buttonId: `owner`, buttonText: { displayText: `OWNER` }, type: 1 }]
-ZimBotInc.sendMessage(m.chat, { caption: `🖥️Done Scrapping Metadata...`, video: { url: data.watermark }, buttons: button, footer: botname})
-})
-}
 case 'tiktok5': case 'tt5': {
   // //if 
 if (!text) throw '*Enter a Link Query!*'            
@@ -4422,11 +4270,7 @@ var hadi = randomNomor(100)
 var hadie = randomNomor(200)     
 var hadir = randomNomor(300)
 var memek = randomNomor(1000)                      
-<<<<<<< HEAD
 let caption = `*▊▊▊TIKTOK DL▊▊▊*\n\n*AUTHOR* : DRIPS\n*NICKNAME* : ${video.author.nickname}\n*CAPTION* : ${video.description}\n*COMMENTS* : ${memek}\n*CREATE* ${hadir} Ago\n*LIKES* : ${hadi}\n*DISLIKES* : ${hadie}\n*SOURCE* : ${text}\n\n\n*ᴢɪᴍ ʙᴏᴛ ɪɴᴄ*`
-=======
-let caption = `*🔏TIKTOK DL🔏*\n\n*AUTHOR* : DRIPS\n*NICKNAME* : ${video.author.nickname}\n*CAPTION* : ${video.description}\n*COMMENTS* : ${memek}\n*CREATE* ${hadir} Ago\n*LIKES* : ${hadi}\n*DISLIKES* : ${hadie}\n*SOURCE* : ${text}\n\n\n*ᴢɪᴍ ʙᴏᴛ ɪɴᴄ*`
->>>>>>> d904ae1d (new update)
 buf = await getBuffer(video.author.avatar)                
 ZimBotInc.sendMessage(m.chat, { image: { url: video.author.avatar }, jpegThumbnail:buf, caption: `${caption}` }, { quoted: m })
 ZimBotInc.sendMessage(m.chat, { video: { url: video.video.no_watermark }, jpegThumbnail:buf, mimetype: 'video/mp4', caption: `*Downloading From ${text}*` }, { quoted: m })               
@@ -4446,7 +4290,7 @@ var hadi = randomNomor(100)
 var hadie = randomNomor(200)     
 var hadir = randomNomor(300)
 var memek = randomNomor(1000)                      
-let caption = `**🔏TIKTOK DL🔏**\n\n*⬤AUTHOR* : DRIPS\n*⬤NICKNAME* : ${video.author.nickname}\n*⬤CAPTION* : ${video.description}\n*⬤COMMENTS* : ${memek}\n*⬤CREATE* ${hadir} Ago\n*⬤LIKES* : ${hadi}\n*⬤DISLIKES* : ${hadie}\n*⬤ SOURCE* : ${text}`
+let caption = `**▊▊▊TIKTOK DL▊▊▊**\n\n*⬤AUTHOR* : DRIPS\n*⬤NICKNAME* : ${video.author.nickname}\n*⬤CAPTION* : ${video.description}\n*⬤COMMENTS* : ${memek}\n*⬤CREATE* ${hadir} Ago\n*⬤LIKES* : ${hadi}\n*⬤DISLIKES* : ${hadie}\n*⬤ SOURCE* : ${text}`
 buf = await getBuffer(video.author.avatar)                
 let message = await prepareWAMessageMedia({ image: buf, jpegThumbnail: buf }, { upload: ZimBotInc.waUploadToServer })
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -4516,26 +4360,11 @@ reply(`*Failed to download media and send videos*`)
 })
 }
 break
-case 'tinyurl':{
-   if(!q) return m.reply('link?')
-   request(`https://tinyurl.com/api-create.php?url=${q}`, function (error, response, body) {
-   try {
-  m.reply(body)
-  } catch (e) {
-  m.reply(e)
-  }
-  })
-  }
-break
-case 'creategroup':
-if (!isCreator) return m.reply(mess.owner)
-if (!q) return reply("Enter text")
-const groupu = await ZimBotInc.groupCreate(q, [owner + "@s.whatsapp.net"])
-m.reply('done 👍')
-break
-case 'ig': case 'igdl': case 'instagram': {
+case 'igt': case 'igtdl': case 'instagrtam': {
+
+  
+
 if (!text) throw '*Please Enter Instagarm Link*' 
-<<<<<<< HEAD
 
 if (!isUrl(args[0]) && !args[0].includes('instagram.com')) throw '*The link you provided is not valid*'
 
@@ -4574,7 +4403,16 @@ let link = await getBuffer(i.url)
 ZimBotInc.sendMessage(m.chat, { image: link, jpegThumbnail: await getBuffer(i.preview), caption: `*Instagram ${i.type}*` }, { quoted: m })          
 
 
-=======
+}
+
+
+ }
+
+}).catch((err) => reply(`*Sorry Instagram Instagram ${text} Not found*`))
+
+}		
+break
+case 'ig':{
 if (args.length === 0) throw `Where is the link?\nSend ${prefix + command} url`
 let urlInsta = args[0];
 if (!(urlInsta.includes("instagram.com/p/") ||
@@ -4604,8 +4442,25 @@ ZimBotInc.sendMessage(m.chat,{image: { url: res.links[i].url }},{ quoted: m })
 reply(error);
 ZimBotInc.sendMessage(m.chat, { text: `sorry zimbot user must be private or unavailable` }, { quoted: m })
 });
->>>>>>> d904ae1d (new update)
+
 }
+break
+case 'tinyurl':{
+   if(!q) return m.reply('link?')
+   request(`https://tinyurl.com/api-create.php?url=${q}`, function (error, response, body) {
+   try {
+  m.reply(body)
+  } catch (e) {
+  m.reply(e)
+  }
+  })
+  }
+break
+case 'creategroup':
+if (!isCreator) return m.reply(mess.owner)
+if (!q) return reply("Enter text")
+const groupu = await ZimBotInc.groupCreate(q, [owner + "@s.whatsapp.net"])
+m.reply('done 👍')
 break
 case 'ig3': case 'igdl3': case 'instagram3': {
 
@@ -4636,11 +4491,7 @@ case 'ig2': case 'igdl2': case 'instagram2': {
 anu = await fetchJson(`https://api.akuari.my.id/downloader/igdl?link=${text}`)
 var oi = 1
 for(let i of anu.medias){                
-<<<<<<< HEAD
 var txt = `*▊▊▊INSTA DL▊▊▊*\n\n*Username:* ${anu.user.username}\n*Fullname:* ${anu.user.fullName}\n*Followers:* ${anu.user.followers}\n*Type:* ${anu.medias[0].type}\n*Tipe:* ${anu.medias[0].fileType}\n*ID:* ${anu.user.id}\n*Jumlah Media:* ${oi++}\n*Url:* ${text}\n\n*ᴢɪᴍ ʙᴏᴛ ɪɴᴄ*`
-=======
-var txt = `*🔏INSTA DL🔏*\n\n*Username:* ${anu.user.username}\n*Fullname:* ${anu.user.fullName}\n*Followers:* ${anu.user.followers}\n*Type:* ${anu.medias[0].type}\n*Tipe:* ${anu.medias[0].fileType}\n*ID:* ${anu.user.id}\n*Jumlah Media:* ${oi++}\n*Url:* ${text}\n\n*ᴢɪᴍ ʙᴏᴛ ɪɴᴄ*`
->>>>>>> d904ae1d (new update)
 var buf = await getBuffer(anu.user.profilePicUrl)        
 ZimBotInc.sendMessage(m.chat, { image: { url: anu.user.profilePicUrl }, jpegThumbnail:buf, caption: `${txt}` }, { quoted: m }).catch((err) => m.reply('error'))
 ZimBotInc.sendMessage(m.chat, { video: { url: i.url }, jpegThumbnail:buf, caption: `${botname}`}, { quoted: m }).catch((err) => m.reply('error'))
@@ -4754,7 +4605,7 @@ if (!text) throw '*Enter a Link Query!*'
 if (!isUrl(args[0]) && !args[0].includes('twitter.com')) throw '*The link you provided is not valid*'
      
 xa.Twitter(`${text}`).then(async (data) => {                    
-let txt = `*🔏TWITTER DL🔏*\n\n`
+let txt = `*▊▊▊TWITTER DL▊▊▊*\n\n`
 txt += `*⬤TITLE :* ${data.title}\n`
 txt += `*⬤QUALITY :* ${data.medias[1].quality}\n`
 txt += `*⬤TYPE :* ${data.medias[1].extension}\n`
@@ -4778,7 +4629,7 @@ if (!isUrl(args[0]) && !args[0].includes('twitter.com')) throw '*The link you pr
      
 xa.Twitter(`${text}`).then(async (data) => {
 for (let x of data.medias) {
-let txt = `*🔏TWITTER DL🔏*n\n`
+let txt = `*▊▊▊TWITTER DL▊▊▊*n\n`
 txt += `*⬤TITLE :* ${data.title}\n`
 txt += `*⬤QUALITY :* ${x.quality}\n`
 txt += `*⬤TYPE:* ${x.extension}\n`
@@ -4811,7 +4662,7 @@ if (!isUrl(args[0]) && !args[0].includes('facebook.com')) throw '*The link you p
 let bocil = require('@bochilteam/scraper')  
 bocil.facebookdlv2(`${text}`).then(async (data) => {                   
 
-let txt = `*🔏FB DOWNLOAD🔏*\n\n`
+let txt = `*▊▊▊FB DOWNLOAD▊▊▊*\n\n`
 
 txt += `*⬤TITLE :* ${data.title}\n`
 
@@ -4862,7 +4713,7 @@ if (!text) throw '*Enter a Link Query!*'
 if (!isUrl(args[0]) && !args[0].includes('facebook.com')) throw '*The link you provided is not valid*'
                  
 xa.Facebook(`${text}`).then(async (data) => {                   
-let txt = `*🔏FB6 DOWNLOAD🔏*\n\n`
+let txt = `*▊▊▊FB6 DOWNLOAD▊▊▊*\n\n`
 txt += `*⬤TITLE :* ${data.title}\n`
 txt += `*⬤QUALITY :* ${data.medias[1].quality}\n`
 txt += `*:⬤TYPE* ${data.medias[1].extension}\n`
@@ -4926,7 +4777,7 @@ case 'speedtest': {
   break
   case 'report': {
     if (!args.join(" ")) return m.reply(`Example : \n- ${prefix + command} feature ig error min\n- ${prefix + command} this user is spamming min`)
-    teks = `*🔏REPORT FEATURE🔏*`
+    teks = `*▊▊▊REPORT FEATURE▊▊▊*`
     teks1 = `\n\nNUMBER : @${m.sender.split("@")[0]}\n*REPORT :* ${args.join(" ")}`
     teks2 = `\n\nSucces send to owner`
     for (let i of owner) {
@@ -4937,7 +4788,7 @@ case 'speedtest': {
     break
     case 'request': case 'suggest': {
     if (!args.join(" ")) return m.reply(`Example : ${prefix + command} min add a downloader feature`)
-    teks = `*🔏REQUEST FEATURE🔏*`
+    teks = `*▊▊▊REQUEST FEATURE▊▊▊*`
     teks1 = `\n\n*NUMBER :* @${m.sender.split("@")[0]}\n*REQUEST :* ${args.join(" ")}`
     teks2 = `\n\nSucces send to owner`
     for (let i of owner) {
@@ -4998,7 +4849,7 @@ text: `*Search Results From* ${text}`,
 
 footer: botname,
 
-title: "*🔏ANIME🔏*",
+title: "*▊▊▊ANIME▊▊▊*",
 
 buttonText: "CLICK HERE",
 
@@ -5252,8 +5103,8 @@ ZimBotInc.sendMessage(m.chat, { image: buf, jpegThumbnail:buf, caption: `PhotoFi
   showAdAttribution: true,
   mediaType:2,
   thumbnail: fs.readFileSync(`./drips.jpg`) ,
-  mediaUrl:`https://youtu.be/v1UL3fB3bK0`, 
-sourceUrl: `https://youtu.be/v1UL3fB3bK0` }}}, {quoted: m})
+  mediaUrl:`https://youtu.be/KNu-gr2h7bo`, 
+sourceUrl: `https://youtu.be/KNu-gr2h7bo` }}}, {quoted: m})
 }
  
 //----END HERE-------\\
@@ -5385,8 +5236,8 @@ ZimBotInc.sendMessage(m.chat, { image: { url: anu }, caption: `Made by ${global.
   showAdAttribution: true,
   mediaType:2,
   thumbnail: fs.readFileSync(`./drips.jpg`) ,
-  mediaUrl:`https://youtu.be/v1UL3fB3bK0`, 
-sourceUrl: `https://youtu.be/v1UL3fB3bK0` }}}, {quoted: m})
+  mediaUrl:`https://youtu.be/KNu-gr2h7bo`, 
+sourceUrl: `https://youtu.be/KNu-gr2h7bo` }}}, {quoted: m})
 }
 //----END HERE--------\\
 
@@ -5428,8 +5279,8 @@ ZimBotInc.sendMessage(m.chat, { image: anu, caption: `*PHOTO OXY ${command}*` , 
   showAdAttribution: true,
   mediaType:2,
   thumbnail: fs.readFileSync(`./drips.jpg`) ,
-  mediaUrl:`https://youtu.be/v1UL3fB3bK0`, 
-sourceUrl: `https://youtu.be/v1UL3fB3bK0` }}}, {quoted: m})
+  mediaUrl:`https://youtu.be/KNu-gr2h7bo`, 
+sourceUrl: `https://youtu.be/KNu-gr2h7bo` }}}, {quoted: m})
 }
 break
 
@@ -5457,8 +5308,8 @@ ZimBotInc.sendMessage(m.chat, { image: anu, caption: `*EPHOTO ${command}*` ,  qu
   showAdAttribution: true,
   mediaType:2,
   thumbnail: fs.readFileSync(`./drips.jpg`) ,
-  mediaUrl:`https://youtu.be/v1UL3fB3bK0`, 
-sourceUrl: `https://youtu.be/v1UL3fB3bK0` }}}, {quoted: m})
+  mediaUrl:`https://youtu.be/KNu-gr2h7bo`, 
+sourceUrl: `https://youtu.be/KNu-gr2h7bo` }}}, {quoted: m})
 }
 break
 
@@ -5787,11 +5638,7 @@ case 'igsearch':
       {
        text: `${ucapannya2} ${pushname} *Search Results From ${text} Click the button below to choose*`,
        footer: `© ᴢɪᴍ ʙᴏᴛ ɪɴᴄ`,
-<<<<<<< HEAD
        title: "*▊▊▊APK DOWNLOAD▊▊▊*",
-=======
-       title: "*🔏APK DOWNLOAD🔏*",
->>>>>>> d904ae1d (new update)
        buttonText: "CLICK HERE",
        sections
       }, { quoted : m })                 
@@ -5808,11 +5655,7 @@ case 'igsearch':
                          dhupi.rexdldown(`${text}`).then(async (anu) => {        
                          if (anu[0].size.split('MB')[0] >= 150) return reply('*File Over Limit* '+util.format(anu))
                          for (let i of anu) {    
-<<<<<<< HEAD
                          linkye = `*▊▊▊APK DOWNLOAD▊▊▊*\n\n*TITLE:* ${i.title}\n*UPDATE:* ${i.up}\n*VERSION:* ${i.vers}\n*FILESIZE:* ${i.size}\n*URL:* \n*DESCRIPTION:* ${i.desc}\n\n*ᴢɪᴍ ʙᴏᴛ ɪɴᴄ*`         
-=======
-                         linkye = `*🔏APK DOWNLOAD🔏*\n\n*TITLE:* ${i.title}\n*UPDATE:* ${i.up}\n*VERSION:* ${i.vers}\n*FILESIZE:* ${i.size}\n*URL:* \n*DESCRIPTION:* ${i.desc}\n\n*ᴢɪᴍ ʙᴏᴛ ɪɴᴄ*`         
->>>>>>> d904ae1d (new update)
                               ZimBotInc.sendMessage(m.chat, { image: await getBuffer(i.thumb), jpegThumbnail: await getBuffer(i.thumb), caption: `${linkye}` }, { quoted: m })
                               ZimBotInc.sendMessage(m.chat, {document: await getBuffer(i.link), mimetype: `application/vnd.android.package-archive`, fileName: `${i.title}`}, {quoted:m})  
                               }  
@@ -6312,16 +6155,12 @@ let buttoni = [
         headerType: 4,
         contextInfo: { externalAdReply:{
         title:"ᴢɪᴍ ʙᴏᴛ ɪɴᴄ",
-<<<<<<< HEAD
         body:"SUB DRIPS OFC",
-=======
-        body:"SUB ZIMBOT",
->>>>>>> d904ae1d (new update)
         showAdAttribution: true,
         mediaType:2,
         thumbnail: fs.readFileSync('./drips.jpg'),
-        mediaUrl:`https://youtu.be/v1UL3fB3bK0`, 
-        sourceUrl: `https://youtu.be/v1UL3fB3bK0`,
+        mediaUrl:`https://youtu.be/KNu-gr2h7bo`, 
+        sourceUrl: `https://youtu.be/KNu-gr2h7bo`,
         }}
         }
         ZimBotInc.sendMessage(m.chat, buttonMessage)
@@ -6385,163 +6224,6 @@ case 'listmenu':
   buttonText: "CLICK HERE",
   sections
   }, { quoted : m })
-<<<<<<< HEAD
-break
-case 'setmenu': {
-  if (!isCreator) throw mess.owner
-  let setbot = db.settings[botNumber]
-     if (args[0] === 'templateImage'){
-      setbot.templateImage = true
-      setbot.templateLocation = false
-      setbot.templateGif = false
-      setbot.templateMsg = false
-      setbot.templateList = false
-      setbot.templateDoc = false
-      setbot.templateZimbot = false
-      reply(mess.success)
-      } else if (args[0] === 'templateLocation'){
-      setbot.templateImage = false
-      setbot.templateLocation = true
-      setbot.templateGif = false
-      setbot.templateMsg = false
-      setbot.templateList = false
-      setbot.templateDoc = false
-      setbot.templateZimbot = false
-      reply(mess.success)
-      } else if (args[0] === 'templateGif'){
-      setbot.templateImage = false
-      setbot.templateLocation = false
-      setbot.templateGif = true
-      setbot.templateMsg = false
-      setbot.templateList = false
-      setbot.templateDoc = false
-      setbot.templateZimbot = false
-      reply(mess.success)
-      } else if (args[0] === 'templateMessage'){
-      setbot.templateImage = false
-      setbot.templateLocation = false
-      setbot.templateGif = false
-      setbot.templateMsg = true
-      setbot.templateList = false
-      setbot.templateDoc = false
-      setbot.templateZimbot = false
-      reply(mess.success)
-      } else if (args[0] === 'templateList'){
-      setbot.templateImage = false
-      setbot.templateLocation = false
-      setbot.templateGif = false
-      setbot.templateMsg = false
-      setbot.templateList = true
-      setbot.templateDoc = false
-      setbot.templateZimbot = false
-      reply(mess.success)
-      } else if (args[0] === 'templateDoc'){
-      setbot.templateImage = false
-      setbot.templateLocation = false
-      setbot.templateGif = false
-      setbot.templateMsg = false
-      setbot.templateList = false
-      setbot.templateDoc = true
-      setbot.templateZimbot = false
-      reply(mess.success)
-    } else if (args[0] === 'templateZimbot'){
-      setbot.templateImage = false
-      setbot.templateLocation = false
-      setbot.templateGif = false
-      setbot.templateMsg = false
-      setbot.templateList = false
-      setbot.templateDoc = false
-      setbot.templateZimbot = true
-      reply(mess.success)
-      } else {
-        let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-          listMessage :{
-         title: ``,
-         description:
- `
- *ᴜᴘᴛɪᴍᴇ :* ${runtime(process.uptime())}
-
- ┌───〔 *_◉ᴀʙᴏᴜᴛ◉_* 〕
- ┊ *❗ᴏꜱ ʀᴇʟᴇᴀꜱᴇ:* ${os.release()}
- ┊ *❕ᴏꜱ ᴛʏᴘᴇ:*   ${os.type()}
- ┊ *❗ᴅɪʀᴇᴄᴛᴏʀʏ:*  ${os.homedir()}
- ┊ *❕ꜱᴘᴇᴇᴅ :* ${latensie.toFixed(4)} Second
- ┊ *ʀᴀᴍᴜsᴀɢᴇ :* ${ram2}
- ┊ *❗ᴘʟᴀᴛʟғᴏʀᴍ :* ${os.platform()} 
- ┊ *❗ꜰʀᴇᴇ ᴍᴏᴍᴏʀʏ:* ${os.freemem()}
- ┊ *❕ᴛᴏᴛᴀʟ ᴍᴇᴍᴏʀʏ:* ${os.totalmem()}
- ┊ *❕ᴠᴇʀꜱɪᴏɴ:* ${os.version()}
- ┊ *❗ᴅᴇᴠɪᴄᴇ :* ${os.hostname()}
- ┊ *❕ᴛᴏᴛᴀʟ ᴜsᴇʀs :* ${Object.keys(global.db.users).length}
- └───────────●
-        `,
-         buttonText: "SET MENU",
-         footerText: "ᴢɪᴍ ʙᴏᴛ ɪɴᴄ 4",
-         listType: "SINGLE_SELECT",
-         sections: [{
-       "title": "ᴢɪᴍ ʙᴏᴛ ɪɴᴄ",
-       "rows": [
-       {
-       "title": "TEMPLATE ZIM-BOT",
-       
-       "rowId": `${prefix}setmenu templateZimbot`
-       }
-       ]
-       },
-       {
-       "title": "ᴢɪᴍ ʙᴏᴛ ᴠ5",
-       "rows": [
-       {
-       "title": "TEMPLATE IMAGE",
-       
-       "rowId": `${prefix}setmenu templateImage`
-       },
-       {
-       "title": "TEMPLATE MESSAGE",
-       
-       "rowId": `${prefix}setmenu templateMessage`
-       },
-       {
-       "title": "TEMPLATE LIST",
-       
-       "rowId": `${prefix}setmenu templateList`
-       },
-       {
-       "title": "TEMPLATE DOC",
-       
-       "rowId": `${prefix}setmenu templateDoc`
-       },
-       {
-       "title": "TEMPLATE GIF",
-       
-       "rowId": `${prefix}setmenu templateGif`
-       },
-       {
-       "title": "TEMPLATE LOCATION",
-       
-       "rowId": `${prefix}setmenu templateLocation`
-       },
-       {
-       "title": "SOURCE CODE",
-       
-       "rowId": `${prefix}sc`
-       },
-       {
-       "title": "CREDITS",
-       
-       "rowId": `${prefix}credits`
-       }
-       ]
-       }
-       ],
-         listType: 1
-          }
-        }), {})
-        ZimBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
-        }
-      }
-=======
->>>>>>> d904ae1d (new update)
   break
   case 'allmenu': case 'zimbotmenu': {
 ZimBotInc.sendMessage(m.chat, { react: { text: `${global.reactmoji}`, key: m.key }})
@@ -8024,13 +7706,13 @@ m.copyNForward(other, true, m.quoted && m.quoted.fromMe ? {
    if (antiToxic)
    if (bad.includes(zimbotincv3)) {
    if (m.text) {
-   zimbotv3 = `*🔏ANTIBAD WORDS🔏*\n\n*Lucky you, you are admin*`
+   zimbotv3 = `*▊▊▊ANTIBAD WORDS▊▊▊*\n\n*Lucky you, you are admin*`
    if (isAdmins) return reply(zimbotv3)
    if (m.key.fromMe) return reply(zimbotv3)
    if (isCreator) return reply(zimbotv3)
    kice = m.sender
    await ZimBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-   ZimBotInc.sendMessage(from, {text:`*🔏ANTIBAD WORDS🔏*\n\n@${kice.split("@")[0]} *was kicked because of being rude to others in this group*`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})}
+   ZimBotInc.sendMessage(from, {text:`*▊▊▊ANTIBAD WORDS▊▊▊*\n\n@${kice.split("@")[0]} *was kicked because of being rude to others in this group*`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})}
    }
 if (isCmd && budy.toLowerCase() != undefined) {
     if (m.chat.endsWith('broadcast')) return
